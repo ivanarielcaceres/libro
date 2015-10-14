@@ -1,44 +1,66 @@
-% !TeX TS-program = PdfLaTeX
-% !TeX encoding = ISO-8859-1 Unicode
+% !TeX program = PdfLaTeX
+% !TeX encoding = ISO-8859-1
 % !TeX spellcheck = es_ES, en_US
 
 
 
 
-\documentclass[a4paper,12pt,normaltoc]{book}
+\documentclass[a4paper,12pt]{book}
   
-  \usepackage{ae}
-  \usepackage[T1]{fontenc}
-  \usepackage{geometry}
-  \usepackage{graphicx}
-   \usepackage[fit]{truncate}
-  \geometry{a4paper}
-  
-  
-  
-  \title{Data Discovery Paraguay}
-  \author{Ariel Hernán Landaida Duarte, Iván Ariel Caceres Cañete}
-  \date{}
-  
-  \begin{document}
-  \maketitle
-  
-  Data Discovery
-  
-  \clearpage\null
-  %Oculta la palabra Chapter y muestra solo el nombre que define para cada capitulo
-  \renewcommand{\chaptername}{CAPÍTULO}
-  \input{contenido/cap1}	
-  
-  \section[dlsadk]{Business Intelligence}
-	Business Intelligence (from reference \cite{kumari2013business})
+	\usepackage{ae}
+	\usepackage[T1]{fontenc}
+	\usepackage{geometry}
+	\usepackage{graphicx}  
+	\usepackage{fancyhdr} 
+	
+	%Usar cuando queremos ver el area de impresion(muy bueno)
+	%\usepackage{showframe}
 	
 	
-\renewcommand{\bibname}{Bibliografía}
-\bibliographystyle{plain}
-\bibliography{bibFile}
+	%Configura el footer con numeros de pagina CE=CENTER EVENT, CO=CENTER ODD
+	\pagestyle{fancy}	
+	\fancyhf{}
+	\fancyfoot[CE,CO]{\ifnum\value{page}<4\relax\else\thepage\fi}
+	%elimina el subrayado del header
+	\renewcommand{\headrulewidth}{0pt}
+	%muestra un subrayado despues del footer
+	%\renewcommand{\footrulewidth}{0.4pt}
+	
 
-  \end{document}
+
+  
+	\begin{document} 	
+
+		%Caratula
+		\input{caratula/caratula}
+		
+		
+		\title{Data Discovery Paraguay}
+		\author{Ariel Hernán Landaida Duarte, Iván Ariel Caceres Cañete}
+		%oculta la fecha por defecto
+		\date{}
+		
+		%\maketitle		
+		%Data Discovery	  
+
+	  
+		%\clearpage\null
+		%Oculta la palabra Chapter y muestra solo el nombre que define para cada capitulo
+		\renewcommand{\chaptername}{CAPÍTULO}
+		
+		%Insertar capitulos
+		\input{contenido/cap1}	
+	  
+		\section[dlsadk]{Business Intelligence}
+		Business Intelligence (from reference \cite{kumari2013business})
+		
+		
+		\renewcommand{\bibname}{Bibliografía}
+		\bibliographystyle{plain}
+		\bibliography{contenido/bibFile}
+	
+
+	\end{document}
   
   
   
