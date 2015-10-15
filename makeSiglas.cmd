@@ -1,0 +1,1 @@
+makeindex -s libro.ist -t libro.glg -o libro.gls libro.glo

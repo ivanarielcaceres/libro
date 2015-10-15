@@ -10,8 +10,10 @@
 	\usepackage{ae}
 	\usepackage[T1]{fontenc}
 	\usepackage{geometry}
-	\usepackage{graphicx}  
+	\usepackage{graphicx} 
+	\graphicspath{ {figuras/} } 
 	\usepackage{fancyhdr} 
+
 	
 	%Usar cuando queremos ver el area de impresion(muy bueno)
 	%\usepackage{showframe}
@@ -26,17 +28,40 @@
 	%muestra un subrayado despues del footer
 	%\renewcommand{\footrulewidth}{0.4pt}
 	
+	% Glosario
+	\usepackage{glossaries}
+	\makeglossaries% Inicia
 
-
-  
-	\begin{document} 	
-
+	
+	\begin{document}
+		
 		%Cubiertas o tapas del libro
 		\include{cubierta/cubierta-1}
 		\include{cubierta/cubierta-2}
 		\include{cubierta/cubierta-3}
 		\include{cubierta/cubierta-4}
-				
+		\include{cubierta/cubierta-5}
+		\include{cubierta/dedicatoria}
+		\include{cubierta/agradecimiento}
+		\include{cubierta/resumen}
+		\include{cubierta/abstract}
+		\include{cubierta/glosario}	
+		\tableofcontents
+		
+		%Lista de Figuras
+		\listoffigures
+		\renewcommand{\listfigurename}{INDICE DE FIGURAS}
+		
+		%Lista de Tablas
+		\listoftables
+		\renewcommand{\listtablename}{LISTA DE TABLAS}
+		
+		
+
+		
+		%GLOSARIO		
+		\printglossary[title=Lista de Siglas y Acrónimos]
+		
 		
 		\title{Data Discovery Paraguay}
 		\author{Ariel Hernán Landaida Duarte, Iván Ariel Caceres Cañete}
@@ -52,15 +77,14 @@
 		\renewcommand{\chaptername}{CAPÍTULO}
 		
 		%Insertar capitulos
-		\input{contenido/cap1}	
-	  
-		\section[dlsadk]{Business Intelligence}
-		Business Intelligence (from reference \cite{kumari2013business})
-		
+		\input{contenido/cap1}
+		\input{contenido/cap2}
+		\input{contenido/cap3}
+		\input{contenido/cap4}
 		
 		\renewcommand{\bibname}{Bibliografía}
 		\bibliographystyle{plain}
-		\bibliography{contenido/bibFile}
+		\bibliography{bibliografia/bibFile}
 	
 
 	\end{document}

@@ -1,0 +1,30 @@
+\ifglsentryexists{sig:BI}{}%
+{%
+\gls@defglossaryentry{sig:BI}%
+{%
+name={BI},%
+sort={BI},%
+type={main},%
+first={\protect \textit {Business Intelligence}\glsspace (BI)},%
+firstplural={\protect \textit {Business Intelligence}s\glsspace (BIs)},%
+text={BI},%
+plural={BIs},%
+description={\textit {Business Intelligence}},%
+descriptionplural={\textit {Business Intelligence}\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={\protect \textit {Business Intelligence}},%
+longplural={\protect \textit {Business Intelligence}s},%
+short={BI},%
+shortplural={BIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
