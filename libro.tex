@@ -13,6 +13,16 @@
 	\usepackage{graphicx} 
 	\graphicspath{ {figuras/} } 
 	\usepackage{fancyhdr} 
+	\usepackage{sectsty}
+	
+	%Centra el titulo de los capitulos
+	\chapterfont{\centering}
+	%Centra el titulo de las secciones
+	%\sectionfont{\centering}
+	%Centra el titulo de las sub-secciones
+	%\subsectionfont{\centering}
+	
+	
 
 	
 	%Usar cuando queremos ver el area de impresion(muy bueno)
@@ -46,22 +56,21 @@
 		\include{cubierta/resumen}
 		\include{cubierta/abstract}
 		\include{cubierta/glosario}	
-		\tableofcontents
 		
-		%Lista de Figuras
+		%Lista de Figuras		
+		\renewcommand{\listfigurename}{ÍNDICE DE FIGURAS}
 		\listoffigures
-		\renewcommand{\listfigurename}{INDICE DE FIGURAS}
 		
-		%Lista de Tablas
-		\listoftables
+		%Lista de Tablas		
 		\renewcommand{\listtablename}{LISTA DE TABLAS}
-		
-		
-
+		\listoftables
 		
 		%GLOSARIO		
 		\printglossary[title=Lista de Siglas y Acrónimos]
 		
+		%Lista de contenido		
+		\renewcommand{\contentsname}{ÍNDICE}
+		\tableofcontents
 		
 		\title{Data Discovery Paraguay}
 		\author{Ariel Hernán Landaida Duarte, Iván Ariel Caceres Cañete}
