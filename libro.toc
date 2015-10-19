@@ -1,6 +1,0 @@
-\contentsline {chapter}{\numberline {1}\hbox to\hsize {\hss Introducción\hss }}{19}
-\contentsline {section}{\numberline {1.1}Objetivos}{20}
-\contentsline {section}{\numberline {1.2}dlsadk}{20}
-\contentsline {chapter}{\numberline {2}\hbox to\hsize {\hss Conceptos\hss }}{21}
-\contentsline {chapter}{\numberline {3}Aplicación de Data Discovery a datos de instituciones del Estado}{23}
-\contentsline {chapter}{\numberline {4}\hbox to\hsize {\hss Conclusiones y Trabajos futuros\hss }}{25}
