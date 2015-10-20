@@ -30,13 +30,29 @@
 	
 	
 	%Configura el footer con numeros de pagina CE=CENTER EVENT, CO=CENTER ODD
-	\pagestyle{fancy}	
-	\fancyhf{}
-	\fancyfoot[CE,CO]{\ifnum\value{page}<4\relax\else\thepage\fi}
+	%%\pagestyle{fancy}	
+	%%\fancyhf{}
+	%%\fancyfoot[CE,CO]{\ifnum\value{page}<17\relax\else\thepage\fi}
 	%elimina el subrayado del header
-	\renewcommand{\headrulewidth}{0pt}
+	%%\renewcommand{\headrulewidth}{0pt}
 	%muestra un subrayado despues del footer
 	%\renewcommand{\footrulewidth}{0.4pt}
+	
+	
+	% Page style for preliminary pages.
+	\fancypagestyle{preliminary}{
+		\fancyhf{}% Clear header/footer
+		\fancyfoot[C]{\thepage}% Footer
+		\renewcommand{\headrulewidth}{0pt}% No header rule
+	}
+	
+	% Page style for main matter.
+	\fancypagestyle{mainmatter}{
+		\fancyhf{}% Clear header/footer
+		\fancyfoot[C]{\thepage}% Footer
+		\renewcommand{\headrulewidth}{0pt}% No header rule
+	}
+	
 	
 	% Glosario
 	\usepackage{glossaries}
@@ -44,6 +60,8 @@
 
 	
 	\begin{document}
+		\pagestyle{preliminary}\pagenumbering{roman}
+		\fancypagestyle{plain}{\pagestyle{preliminary}}% Correct plain page style
 		
 		%Cubiertas o tapas del libro
 		\include{cubierta/cubierta-1}
@@ -80,13 +98,17 @@
 		%\maketitle		
 		%Data Discovery	  
 
+		
+		\mainmatter
+		\pagestyle{mainmatter}\pagenumbering{arabic}
+		\fancypagestyle{plain}{\pagestyle{mainmatter}}% Correct plain page style
 	  
 		%\clearpage\null
 		%Oculta la palabra Chapter y muestra solo el nombre que define para cada capitulo
 		\renewcommand{\chaptername}{CAPÍTULO}
-		
+
 		%Insertar capitulos
-		\input{contenido/cap1}
+		\input{contenido/cap1}		
 		\input{contenido/cap2}
 		\input{contenido/cap3}
 		\input{contenido/cap4}
