@@ -14,6 +14,12 @@
 	\graphicspath{ {figuras/} } 
 	\usepackage{fancyhdr} 
 	\usepackage{sectsty}
+	\usepackage{tocloft}
+	\usepackage[nopostdot,style=super,nonumberlist,toc]{glossaries}
+	\usepackage{float}
+	\restylefloat{table}
+
+	
 	
 	%Centra el titulo de los capitulos
 	\chapterfont{\centering}
@@ -55,7 +61,15 @@
 	
 	
 	% Glosario
-	\usepackage{glossaries}
+	%\usepackage[doublespacing]{setspace}
+	
+	\setlength{\glsdescwidth}{0.8\linewidth}
+	\newglossarystyle{mylong}{
+		\glossarystyle{long}
+		\renewcommand*{\glossaryentryfield}[5]{%
+			\glsentryitem{##1}\glstarget{##1}{##2} & ............................................................. ##3\glspostdescription\space ##5\\[8pt]}%
+		\renewcommand{\glsgroupskip}{}
+	}
 	\makeglossaries% Inicia
 
 	
@@ -65,28 +79,45 @@
 		
 		%Cubiertas o tapas del libro
 		\include{cubierta/cubierta-1}
+		\clearpage\null
 		\include{cubierta/cubierta-2}
+		\clearpage\null
 		\include{cubierta/cubierta-3}
+		\clearpage\null
 		\include{cubierta/cubierta-4}
 		\include{cubierta/cubierta-5}
 		\include{cubierta/dedicatoria}
 		\include{cubierta/agradecimiento}
 		\include{cubierta/resumen}
 		\include{cubierta/abstract}
-		\include{cubierta/glosario}	
+		%\include{cubierta/glosario}	
+		
 		
 		%Lista de Figuras		
+		\newlength{\mylen}		
 		\renewcommand{\listfigurename}{ÍNDICE DE FIGURAS}
+		\renewcommand{\figurename}{Figura}
+		\renewcommand{\cftfigpresnum}{Figura\enspace}
+		\renewcommand{\cftfigaftersnum}{:}
+		\settowidth{\mylen}{\cftfigpresnum\cftfigaftersnum}
+		\addtolength{\cftfignumwidth}{\mylen}
 		\listoffigures
+
 		
-		%Lista de Tablas		
+		%Lista de Tablas
+		\clearpage		
 		\renewcommand{\listtablename}{LISTA DE TABLAS}
 		\listoftables
+
+
 		
 		%GLOSARIO		
-		\printglossary[title=Lista de Siglas y Acrónimos]
+		\clearpage		
+		\printglossary[style=mylong,title=Lista de Siglas y Acrónimos]
+
 		
-		%Lista de contenido		
+		%Lista de contenido
+		\clearpage				
 		\renewcommand{\contentsname}{ÍNDICE}
 		\tableofcontents
 		
@@ -108,6 +139,9 @@
 		\renewcommand{\chaptername}{CAPÍTULO}
 
 		%Insertar capitulos
+		\input{contenido/introduccion}
+		\input{contenido/objetivos}
+		\input{contenido/justificacion}
 		\input{contenido/cap1}		
 		\input{contenido/cap2}
 		\input{contenido/cap3}
@@ -117,12 +151,4 @@
 		\bibliographystyle{plain}
 		\bibliography{bibliografia/bibFile}
 	
-
-	\end{document}
-  
-  
-  
-  
-  
-  
-  
+\end{document}
