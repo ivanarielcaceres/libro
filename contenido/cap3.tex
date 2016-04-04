@@ -1,6 +1,26 @@
 
 \chapter{Aplicación de Data Discovery a datos de instituciones del Estado}
-Data Discovery
+
+\begin{wrapfigure}{R}{0pt}
+	\centering
+	\includegraphics[width=0.25\textwidth]{figuras/makeDecision}
+	\caption{}
+	\label{fig:makeDecision}
+\end{wrapfigure}
+
+En Paraguay, e inclusive mundialmente, la mayoría de las empresas no logran comprender 100% los datos que generan. La consecuencia de no comprender los datos puede conllevar a tomar una decisión equivocada y esa decisión puede terminar en algo irreversible y de mucho impacto negativo para la organización a lo largo del tiempo. La información es considerada como uno de los recursos más importantes en una empresa, porque en base a esto se obtiene el conocimiento.
+
+Aplicando la técnica de data discovery podremos detectar irregularidades, predecir acontecimientos futuros y preverlos a tiempo. En este trabajo analizaremos los datos de la ANDE y de la DGEEC, realizando cruzamiento entre ambos, con el objetivo de obtener información de interés para la entidad. 
+
+\subsection{Datos de la ANDE y de la DGEEC}
+
+Se cuenta con datos de consumo de energía eléctrica, importe facturado, grupo de consumo (residencial, industrial, exportación, etc), por año (2000-2014), departamento y distrito. Estos datos fueron solicitados formalmente a la entidad a través de la Facultad de Ciencias y tecnología de la Universidad Católica, la cual tuvimos una respuesta favorable para proceder.
+
+\subsection{Dashboard de control / monitoramiento}
+	
+En esta sección se mostrarán 4 ejemplos de paneles hechos con los datos de ambas instituciones (DGEEC y ANDE).  Una de las técnicas de comparación a ser utilizadas en los gráficos es ,  ?Medición de tasas de crecimientos?, la cual se calcula el porcentaje de crecimiento que hubo por cada año. Por ejemplo, si al cerrar el año 2014, la cantidad de clientes llegó a 1.000.000 y en el año 2015 aumentó 100.000, esto quiere decir que en el año 2015, la tasa de crecimiento de los clientes fue del 10%, es decir, hubo un crecimiento positivo y la cantidad de clientes ha aumentado el respecto al año anterior. Suponiendo que el año 2016 la ANDE cierra con un total de 1.000.000 clientes,, su crecimiento será de 10% negativo.
+La fórmula empleada es la que sigue, donde ?n? es el año actual y ?n-1? el año anterior, PIB es una variable que indica, en el caso  de nuestra comparación, la cantidad de clientes que posee la ANDE .
+	
 \section{Data marts}
 Escribir sobre los objetivos
 Como puede ser visto en la figura \ref{fig:BI}.
