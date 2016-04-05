@@ -17,7 +17,7 @@ libro.ist
 libro.lof
 libro.log
 libro.lot
-libro.pdf
+#libro.pdf
 libro.synctex.gz
 libro.toc
 libro.xdy
