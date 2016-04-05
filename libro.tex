@@ -19,7 +19,11 @@
 	\usepackage[nopostdot,style=super,nonumberlist,toc]{glossaries}
 	\usepackage{float}
 	\restylefloat{table}
+	\usepackage{titlesec}
 
+
+\titleformat{\chapter}[display]
+{\normalfont\bfseries}{}{0pt}{\Large}
 
 	%Centra el titulo de los capitulos
 	\chapterfont{\centering}
@@ -136,7 +140,7 @@
 	  
 		%\clearpage\null
 		%Oculta la palabra Chapter y muestra solo el nombre que define para cada capitulo
-		\renewcommand{\chaptername}{CAPÍTULO}
+		\renewcommand{\chaptername}{CAPITULO}
 
 		%Insertar capitulos
 		\input{contenido/introduccion}
