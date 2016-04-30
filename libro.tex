@@ -70,11 +70,11 @@
 	% Glosario
 	%\usepackage[doublespacing]{setspace}
 	
-	\setlength{\glsdescwidth}{0.8\linewidth}
+	\setlength{\glsdescwidth}{0.9\linewidth}
 	\newglossarystyle{mylong}{
 		\glossarystyle{long}
 		\renewcommand*{\glossaryentryfield}[5]{%
-			\glsentryitem{##1}\glstarget{##1}{##2} & ............................................................. ##3\glspostdescription\space ##5\\[8pt]}%
+			\glsentryitem{##1}\glstarget{##1}{##2} & ........................ ##3\glspostdescription\space ##5\\[8pt]}%
 		\renewcommand{\glsgroupskip}{}
 	}
 	\makeglossaries% Inicia
@@ -97,7 +97,7 @@
 		\include{cubierta/agradecimiento}
 		\include{cubierta/resumen}
 		\include{cubierta/abstract}
-		%\include{cubierta/glosario}	
+		\include{cubierta/glosario}	
 		
 		
 		%Lista de Figuras		
@@ -118,11 +118,7 @@
 
 
 		
-		%GLOSARIO		
-		\clearpage		
-		\printglossary[style=mylong,title=Lista de Siglas y Acrónimos]
-
-		
+	
 		%Lista de contenido
 		\clearpage				
 		\renewcommand{\contentsname}{ÍNDICE}
@@ -153,7 +149,13 @@
 		\input{contenido/cap2}
 		\input{contenido/cap3}
 		\input{contenido/cap4}
+		\input{contenido/cap5}
+
+		%GLOSARIO		
+		\clearpage		
+		\printglossary[style=mylong,title=Lista de Siglas y Acrónimos]		
 		
+		\clearpage
 		\renewcommand{\bibname}{Bibliografía}
 		\bibliographystyle{apacite}
 		\bibliography{bibliografia/bibFile}
