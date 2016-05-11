@@ -13,7 +13,7 @@ Esto produce grandes cantidades de información que pueden llevar al desarrollo d
 
 Las tecnologías de BI ofrecen vistas históricas, actuales y predictivas de las operaciones de una empresa. Algunas de las funcionalidades más comunes de BI son reportes, procesamiento analítico en línea (en adelante OLAP, Analytical Processing), minería de datos, minería de procesos, procesamiento de eventos complejos, gestión del  rendimiento empresarial, benchmarking, minería de texto, análisis predictivos y análisis prescriptivos. BI tiene como objetivo apoyar una mejor toma de decisiones, por tanto, un sistema de BI puede también ser llamado sistema de apoyo a las decisiones o DSS (del inglés, decision support system)\cite{wiki:businessIntelligence}.
 
-Las herramientas de BI son diseñadas para obtener, analizar y reportar datos. Estas herramientas generalmente leen datos que han sido previamente almacenados, frecuentemente, aunque no necesariamente en un almacén de datos (en adelante, datawarehouse). BI ha experimentado un alto crecimiento y las tecnologías de BI han ganado mucha popularidad. De acuerdo a \cite{hancock2006practical}, BI es ``un conjunto de conceptos, métodos, y tecnologías para convertir datos separados o aislados de una organización en información útil para mejorar el rendimiento del negocio``
+Las herramientas de BI son diseñadas para obtener, analizar y reportar datos. Estas herramientas generalmente leen datos que han sido previamente almacenados, frecuentemente, aunque no necesariamente en un almacén de datos (en adelante, datawarehouse). BI ha experimentado un alto crecimiento y ha ganado mucha popularidad. De acuerdo a \cite{hancock2006practical}, BI es ``un conjunto de conceptos, métodos, y tecnologías para convertir datos separados o aislados de una organización en información útil para mejorar el rendimiento del negocio``
 
 En un ambiente de BI, se extraen datos de diferentes fuentes, se transforman y posteriormente se cargan (ETL, extraction - transformation - load) dentro de un datawarehouse y desde este repositorio son utilizados para generar reportes transversales a toda la organización. El proceso de BI y sus varias etapas son mostrados en la Figura ~\ref{fig:EtapasDeBiComoFuentesDeDatosDeCalidad}. La calidad de los datos juegan un rol crítico e importante en el éxito de la inteligencia de negocios, ya que la mala calidad de los datos pueden afectar las decisiones de negocio en todos los niveles de la organización, además de impedir el crecimiento de la organización\cite{kumari2013business}.
 
@@ -29,23 +29,23 @@ Una cuestión fundamental es el hecho que una organización corre sobre datos; y a
 
 \subsubsection{Componentes de BI}
 
-\paragraph{OLAP}
+\paragraph{OLAP: }
 OLAP se refiere al mecanismo por el cual los usuarios de una organización pueden explorar y realizar cortes de datos, usando herramientas sofisticadas que permiten la navegación de dimensiones tales como el tiempo o jerarquías. OLAP, provee vistas resumidas multidimensionales de datos del negocio de una organización, y es usado para reportes, análisis, modelado y planificación para la optimización de una organización.\cite{ranjan2009business}
 
 Las técnicas y herramientas OLAP pueden ser usados para trabajar con datawarehouse o con data marts (un subconjunto de datos de un área específica) diseñados para sistemas sofisticados. Este tipo de consultas son requeridas para descubrir tendencias y analizar factores críticos. Los reportes generan vistas agregadas de datos para mantener la gestión informada sobre el estado de sus negocios. Otras herramientas de BI son usadas para almacenar y analizar datos, tales como la minería de datos y el datawarehouse; sistemas de soporte o apoyo a las decisiones y previsiones; almacén de documentos y gestión de documentos; gestión del conocimiento; mapeamiento, visualización de información y paneles (dashboards); sistemas de información de gestión, sistemas de información geográficas; análisis de tendencias; Software como servicio (SaaS) y otros.\cite{ranjan2009business}
 
-\paragraph{Análisis Avanzado}
-Análisis Avanzado: conocido como minería de datos y análisis predictivos, toma las ventajas de las técnicas de análisis estadísticos para predecir o proveer medidas de certeza sobre ciertos hechos.  La gestión sobre el rendimiento de una organización (Portales, cuadros de mando, paneles de control): esta categoría general normalmente provee un sistema de varios componentes interconectados, de tal forma que en conjunto describan una historia. Por ejemplo, un cuadro de mando integral que muestre componentes de indicadores financieros, todos ellos combinados pueden describir métricas y patrones de aprendizaje y crecimiento en las organizaciones.\cite{ranjan2009business}
+\paragraph{Análisis Avanzado: }
+conocido como minería de datos y análisis predictivos, toma las ventajas de las técnicas de análisis estadísticos para predecir o proveer medidas de certeza sobre ciertos hechos.  La gestión sobre el rendimiento de una organización (Portales, cuadros de mando, paneles de control): esta categoría general normalmente provee un sistema de varios componentes interconectados, de tal forma que en conjunto describan una historia. Por ejemplo, un cuadro de mando integral que muestre componentes de indicadores financieros, todos ellos combinados pueden describir métricas y patrones de aprendizaje y crecimiento en las organizaciones.\cite{ranjan2009business}
 
-\paragraph{BI en tiempo real}
-BI en tiempo real: Permite la distribución de métricas en tiempo real a través de emails, sistemas de mensajería instantánea y/o pantallas interactivas. 
+\paragraph{BI en tiempo real: }
+permite la distribución de métricas en tiempo real a través de emails, sistemas de mensajería instantánea y/o pantallas interactivas. 
 
-\paragraph{Datawarehouse y Datamarts}
-Datawarehouse y Datamarts: El datawarehouse es un componente importante de BI. El datawarehouse soporta la propagación física de los datos manejando grandes volúmenes de registros de las organizaciones para integración, limpieza,  agregación y tareas de consulta.\cite{ranjan2009business}
+\paragraph{Datawarehouse y Datamarts: }
+el datawarehouse es un componente importante de BI. El datawarehouse soporta la propagación física de los datos manejando grandes volúmenes de registros de las organizaciones para integración, limpieza,  agregación y tareas de consulta.\cite{ranjan2009business}
 
-También puede contener datos operacionales, los cuales pueden ser definidos como un conjunto actualizable de datos integrados disponibles para toda una organización, para la toma de decisiones tácticas de un asunto específico. Contiene datos vivos actualizados en tiempo real, no solamente fotos de un momento específico, y también conserva un historial mínimo. Las fuentes de datos pueden ser bases de datos operacionales, datos históricos, datos externos, por ejemplo, de organizaciones de investigación de mercados o desde internet mismo, o información desde un entorno de datawarehouse ya existente. Las fuentes de datos pueden ser de bases de datos relacionales o cualquier otra estructura que apoya o soporta el conjunto de sistemas transaccionales de una organización. \cite{ranjan2009business}
+También puede contener datos operacionales, los cuales pueden ser definidos como un conjunto actualizable de datos integrados disponibles para toda una organización, para la toma de decisiones tácticas de un asunto específico. Contiene datos vivos actualizados en tiempo real, no solamente fotos de un momento específico, y también conserva un historial mínimo. Las fuentes de datos pueden ser bases de datos operacionales, datos históricos, datos externos, por ejemplo, desde las empresas de investigación de mercados o desde internet, datos no estructurados de redes sociales o información de un datawarehouse existente. Estas fuentes pueden almacenarse en bases de datos relacionales o cualquier otra estructura de datos de sistemas transaccionales. \cite{ranjan2009business}. También pueden residir en muchas plataformas diferentes, tales como tablas, hojas de cálculo o información no estructurada, como archivos de texto plano, imágenes y otras informaciones multimedia.
 
-Un datawarehouse puede residir en diferentes plataformas y puede contener información estructurada, como tablas u hojas de cálculo, o información no estructurada, como archivos de texto plano o imágenes o alguna información multimedia. Un datamart, tal como se describe en \cite{kumari2013business}, es una colección de disciplinas organizadas para el apoyo de las decisiones basadas en las necesidades de un departamento dado. Finanzas tiene su data marts, marketing tiene el suyo, y ventas tienen la suya y así sucesivamente. 
+Un datamart, tal como se describe en \cite{kumari2013business}, es una colección de disciplinas organizadas para el apoyo de las decisiones basadas en las necesidades de un departamento dado. Finanzas tiene su data marts, marketing tiene el suyo, y ventas tienen la suya y así sucesivamente. 
 
 Cada departamento tiene su propia interpretación de cómo debe verse un data mart y el data mart de cada departamento es particular y atiende las necesidades específicas del área. Similar al datawarehouse, los data marts contienen datos transaccionales que ayudan a expertos en negocios a crear una estrategia basada en el análisis de las tendencias y experiencias pasadas. La principal diferencia es que la creación de los data marts se basa en una necesidad específica, predefinida para un grupo determinado. Un data mart puede apoyar o soportar procesos o unidades de negocio específicos.\cite{ranjan2009business}
 
@@ -53,14 +53,14 @@ Las herramientas de BI son ampliamente aceptadas como una capa intermedia entre 
 
 Las fuentes de datos pueden ser bases de datos operacionales, datos históricos, datos externos por ejemplo, desde las empresas de investigación de mercados o desde internet, datos no estructurados de redes sociales, o información desde un datawarehouse existente. Las fuentes de datos pueden ser bases de datos relacionales o cualquier otra estructura de datos de sistemas transaccionales. Ellos también pueden residir en muchas plataformas diferentes, tales como tablas, hojas de cálculo, o información no estructurada, tales como archivos de texto plano o imágenes y otras informaciones multimedia. \cite{ranjan2009business}
 
-\subsubsection{BENEFICIOS DE BI}
+\subsubsection{Beneficios de BI}
 
 BI provee muchos beneficios a las compañías que lo utilizan. Puede ayudar a eliminar muchas conjeturas erróneas dentro de una organización, mejorando la comunicación entre departamentos mientras se coordinan las actividades, y apoyan a las organizaciones para responder rápidamente a cambios de condiciones financieras o preferencias de clientes. BI puede ayudar a mejorar el rendimiento general de una organización.\cite{ranjan2009business}
 
 La información es frecuentemente considerada como el segundo recurso más importante que una compañía tiene (lo más valorable de una compañía son las personas). Cuando una compañía puede tomar decisiones basadas en información oportuna y precisa, puede ayudar a mejorar su rendimiento en su segmento de mercado. BI también agiliza la toma de decisiones, ayuda a actuar rápida y correctamente con la información adecuada antes de otras empresas de la competencia. También pueden mejorar la experiencia del cliente, teniendo en cuenta la respuesta oportuna y adecuada a los problemas y prioridades de los mismos. A continuación se listan algunos de estos beneficios: 
 
 \begin{itemize}[noitemsep]
-\item   Con herramientas de BI, los empleados puede fácilmente convertir sus conocimientos de negocio en inteligencia analítica para resolver muchas cuestiones de negocio, tales como incrementar la tasa de respuestas desde correos electrónicos, teléfonos, y mejorar las campañas de ventas desde internet.
+\item   Con herramientas de BI, los empleados pueden fácilmente convertir sus conocimientos de negocio en inteligencia analítica para resolver muchas cuestiones de negocio, tales como incrementar la tasa de respuestas desde correos electrónicos, teléfonos, y mejorar las campañas de ventas desde internet.
 
 \item   Con BI, las empresas pueden identificar sus clientes más rentables y las razones subyacentes para la lealtad de esos clientes, así como identificar clientes futuros con grandes potenciales.
 
@@ -99,34 +99,34 @@ Para que los sistemas BI trabajen efectivamente, existen algunas restricciones t
 
 \begin{itemize}[noitemsep]
 	\item Seguridad y acceso de usuarios al data warehouse.
-	\item Volumen de datos (capacidad)
-	\item Cuánto tiempo será almacenado el dato (retención de datos)
+	\item Volumen de datos (capacidad).
+	\item Cuánto tiempo será almacenado el dato (retención de datos).
 	\item Sizing y rendimiento de infraestructura (servidores).
 \end{itemize}
 
 Las personas que trabajan en BI desarrollan productos que facilitan el trabajo, especialmente cuando las tareas de inteligencia involucran conseguir y analizar grandes cantidades de datos no estructurados. Cada proveedor típicamente define BI de una forma particular,  y comercializa herramientas para hacer BI de la forma en que cada uno lo propone. BI incluye herramientas en diversas categorías, incluyendo las siguientes:\cite{ranjan2009business}
 
 \begin{itemize}[noitemsep]
-\item  AQL (Associative Query Logic) -  Lógica Asociativa de Consultas
+\item  AQL (Associative Query Logic) -  Lógica Asociativa de Consultas.
 \item  Métricas y mediciones del rendimiento del negocio.
 \item Planeamiento Empresarial.
-\item Data mining (DM), Data Farming, y Data warehouses
+\item Data mining (DM), Data Farming, y Data warehouses.
 \item Sistemas de apoyo a la decisión (DSS) y predicción.
 \item Datawarehouse de documentos y gestión documental.
 \item Sistema de Gestión Empresarial.
 \item Finanzas y presupuestos.
-\item Recursos humanos..
-\item Gestión del conocimiento..
+\item Recursos humanos.
+\item Gestión del conocimiento.
 \item Mapeamiento, visualización de la información, y paneles de control (dashboards).
 \item Sistemas de gestión de informaciones.
 \item Sistemas de información geográfica (GIS).
 \item OLAP (Online Analytical Processing) y análisis multidimensional; a veces simplemente llamado ``Analytics`` (basado también en ``hipercubo`` o ``cubo``).
 \item BI en tiempo real.
 \item Análisis de datos estadísticos y técnicos.
-\item Supply Chain Management/Demand Chain Management.
-\item Gestión de la cadena de Suministro/Gestión de la cadena de demanda
-\item Análisis de tendencias..
-\item Reportes y consultas de usuarios/usuarios-finales
+\item Gestión de la línea de producción, Gestión de demandas.
+\item Gestión de la cadena de Suministro/Gestión de la cadena de demanda.
+\item Análisis de tendencias.
+\item Reportes y consultas de usuarios/usuarios-finales.
 \end{itemize}
 
 
@@ -196,7 +196,7 @@ En el siguiente capítulo se presenta una introducción a los métodos y técnicas d
 
 \subsection{Data Discovery  Analysis}
 Data discovery es una arquitectura de BI destinado a informes interactivos y en tiempo real que pueden ser explorados desde múltiples orígenes.
-La mayor parte de la base instalada en todo BI son propietarias de empresas tradicionales que han construido sus plataformas alrededor de una capa semántica y metadatos, la cual es generalmente accesible solo por herramientas del propio fabricante. La situación actual de carácter propietario de la capa semántica tradicional de BI fue aceptada y adoptada por más organizaciones como un facilitador para análisis "ad hoc" a cambio de una única y confiable versión de la realidad, que puede ser accedida fácilmente por los usuarios de negocio, ocultando los aspectos técnicos y la complejidad de las estructuras de datos subyacentes. Sin embargo, con la adopción y rápido crecimiento de las herramientas de data discovery como Qlik, Tableau, y Tibco Spotfire, los usuarios buscan cada vez más acceso a datos confiables en capas semánticas cerradas, y los proveedores de BI se enfrentan a un reto difícil para seguir siendo relevantes en un mercado que está en transición. La respuesta de los proveedores tradicionales y la inversión significativa hasta la fecha, ha sido la utilización de sus capas semánticas existentes para promover la gestión a nivel empresarial de sus propias herramientas de data discovery desarrolladas internamente. Esto ha sido un mecanismo para diferenciar sus soluciones de las de proveedores de data discovery pure-play. Mientras que, en teoría, este enfoque logra un equilibrio entre la facilidad de uso y escalabilidad empresarial. Esto ha mostrado poco éxito para la mayoría de los proveedores de BI tradicionales como huecos de importantes funcionalidades que permanecen entre sus herramientas de data discovery desarrolladas internamente y los de los proveedores especialistas de data discovery.\cite{wiki:dataDiscovery}
+La mayor parte de la base instalada en todo BI son propietarias de empresas tradicionales que han construido sus plataformas alrededor de una capa semántica y metadatos, la cual es generalmente accesible solo por herramientas del propio fabricante. La situación actual de carácter propietario de la capa semántica tradicional de BI fue aceptada y adoptada por más organizaciones como un facilitador para análisis (ad hoc) a cambio de una única y confiable versión de la realidad, que puede ser accedida fácilmente por los usuarios de negocio, ocultando los aspectos técnicos y la complejidad de las estructuras de datos subyacentes. Sin embargo, con la adopción y rápido crecimiento de las herramientas de data discovery como Qlik, Tableau, y Tibco Spotfire, los usuarios buscan cada vez más acceso a datos confiables en capas semánticas cerradas, y los proveedores de BI se enfrentan a un reto difícil para seguir siendo relevantes en un mercado que está en transición. La respuesta de los proveedores tradicionales y la inversión significativa hasta la fecha, ha sido la utilización de sus capas semánticas existentes para promover la gestión a nivel empresarial de sus propias herramientas de data discovery desarrolladas internamente. Esto ha sido un mecanismo para diferenciar sus soluciones de las de proveedores de data discovery especializadas. Mientras que, en teoría, este enfoque logra un equilibrio entre la facilidad de uso y escalabilidad empresarial. Esto ha mostrado poco éxito para la mayoría de los proveedores de BI tradicionales como huecos de importantes funcionalidades que permanecen entre sus herramientas de data discovery desarrolladas internamente y los de los proveedores especialistas de data discovery.\cite{wiki:dataDiscovery}
 
 La capa semántica que sirve como la base de la mayoría de las plataformas BI tradicionales ha sido ampliamente adoptada por muchas organizaciones a través de los años y ha sido promovida y generalmente aceptada como un componente esencial de una plataforma BI.  Proveedores como SAP (BusinessOjects), IBM (Cognos) u Oracle (OBIEE) mantienen una gran base instalada de clientes que han invertido mucho en el desarrollo, operación y mejora de estas plataformas construidas alrededor de una definida y centralizada capa semántica propietaria.
 
@@ -214,25 +214,34 @@ Una alianza similar a la que existe entre Birst y Tableau fue anunciada en 2014 
 
 Un inconveniente de estas alianzas es que son actualmente unidireccionales en su naturaleza y sólo otorgan acceso de sólo lectura a herramientas de data discovery de otros proveedores de BI a la capa semántica propietaria de proveedores de BI tradicionales. Como tal, ellos todavía no apoyan la promoción de modelos de datos derivados de herramientas de data discovery en la capa semántica como una forma de promover a proveedores independientes que rigen capacidades de data discovery. Esto es, sin embargo, una oportunidad potencial de modernización que los proveedores tradicionales pueden considerar.
 
-Proveedores de software independientes e integradores de sistemas desarrollarán nuevas soluciones de middle-tier que facilitan el acceso a la capa semántica a las herramientas de data discovery a través de servicios web.
+Proveedores de software independientes e integradores de sistemas desarrollarán nuevas soluciones de capa intermedia que facilitan el acceso a la capa semántica a las herramientas de data discovery a través de servicios web.
 
 Mientras que los clientes prefieren una única solución de sus proveedores titulares, ya sea de los proveedores de plataforma tradicional de BI o de proveedor de data discovery, los clientes actualmente encontrarán más oportunidades para acceder a la capa semántica desde los integradores de software y los proveedores independientes menores.
 \subsection{Framework de Análisis de Negocio de Gartner}
 En este trabajo fue adoptado un Framework de Análisis de Negocio de Gartner, el cual se describe a continuación. 
 
-Hay una serie de defectos enraizados en la mayoría de las organizaciones BI y plataformas analiticas, así como una percepción errónea de sus objetivos y cómo gestionarlos. Equipos de BI, especialmente si se encuentra en TI, creen que:
+Hay una serie de defectos relacionados en la mayoría de las organizaciones con relación a BI y plataformas analiticas, así como una percepción errónea de sus objetivos y cómo gestionarlos. Los equipos de BI, especialmente si se encuentran en el área de TI, creen que:
 
-La plataforma analítica de negocio debe ser una solución estrechamente integrado con tan pocos componentes  como fuera posible, preferentemente de un único proveedor, para entregar una sola versión de la verdad para la organización.
+\begin{itemize}[noitemsep]
 
-La información puede ser confiable sólo si está almacenada en un data warehouse corporativo y entregada a los consumidores de información usando artefactos de BI, tales como informes y dashboards.
+\item La plataforma analítica de negocio debe ser una solución estrechamente integrada con pocos componentes, preferentemente de un único proveedor, para entregar una sola versión de la verdad para la organización.
 
-Informaciones creadas  o manipuladas por los usuarios de negocios inevitablemente producirán discrepancias a través de diferentes análisis, lo que lleva a decisiones equivocadas,  generando caos en la organización a través del tiempo.
+\item La información puede ser confiable sólo si está almacenada en un data warehouse corporativo y entregada a los consumidores de información usando artefactos de BI, tales como informes y dashboards.
 
-La responsabilidad del departamento TI para la gestión de información termina en la capa semántica de BI y en los contenidos orientados a TI. Procesos analíticos orientados al negocio están fuera del alcance y no soportados por TI.
-Hay un montón de problemas orientados a la información documentados en el mundo BI y análisis, que obligan a los líderes de BI a seguir estas creencias y desplegar un entorno de BI centralizado y monolítico, que termina siendo impuesta a los usuarios, independientemente de su adecuación a las necesidades. Proveedores titulares de BI, a favor de sus propias plataformas, apoyaran este enfoque también.
+\item Las informaciones creadas  o manipuladas por los usuarios de negocios inevitablemente producirán discrepancias a través de diferentes análisis, lo que lleva a decisiones equivocadas,  generando caos en la organización a través del tiempo.
 
-Gartner cree que un BI exitoso y una plataforma analítica necesitan evolucionar más allá del pensamiento monolítico. Una transformación debe ocurrir para ofrecer diferentes soluciones para las diferentes necesidades del usuario, con un diverso conjunto de niveles de integración, encontrar un equilibrio entre confianza y agilidad. El propósito es ayudar a los usuarios a alcanzar sus objetivos de negocio a través del uso de la tecnología apropiada, no para erradicar las soluciones de BI orientados al usuario que resuelven parcialmente sus problemas de hoy.
+\item La responsabilidad del departamento TI para la gestión de información termina en la capa semántica de BI y en los contenidos orientados a TI. 
+
+\item Procesos analíticos orientados al negocio están fuera del alcance y no soportados por TI.
+Hay varios problemas orientados a la información documentados en el mundo BI y análisis, que obligan a los líderes de BI a seguir estas creencias y desplegar un entorno de BI centralizado y monolítico, que termina siendo impuesta a los usuarios, independientemente de su adecuación a las necesidades. 
+
+\item Los proveedores licenciados de BI, a favor de sus propias plataformas, apoyan este enfoque.
+
+Según Gartner, una plataforma analítica necesitan evolucionar más allá del pensamiento monolítico. Debe ocurrir una transformación para ofrecer diferentes soluciones para las diferentes necesidades del usuario, con un conjunto diverso de niveles de integración, y encontrar un equilibrio entre confianza y agilidad. El propósito es ayudar a los usuarios a alcanzar sus objetivos de negocio a través del uso de la tecnología apropiada, no para erradicar las soluciones de BI orientados al usuario que resuelven parcialmente sus problemas de hoy.
+
 El entorno de BI y el análisis resultante también exigirá cambios en los procesos de gestión de la información, como atribuir nuevas responsabilidades a diferentes personas en la organización.
+
+\end{itemize}
 
 A continuación el framework de análisis de negocios
 Figura ~\ref{fig:FrameworkAnaliticoNegociosGartner} presenta el framework de análisis de negocios de Gartner. 
@@ -272,9 +281,9 @@ Rediseñar el BI y la Plataforma Analitica
 Los líderes de BI deben seguir las herramientas fundamentales descritas anteriormente para así con éxito rediseñar el BI y la plataforma de análisis. Gartner recomienda la instalación de una arquitectura por niveles compuesta por:
 
 \begin{itemize}[noitemsep]
-	\item Portal de Información
-	\item Workbench Análitico
-	\item Laboratorio de datos científicos
+	\item Portal de Información.
+	\item Workbench Análitico.
+	\item Laboratorio de datos científicos.
 \end{itemize}
 
 Esta es la representación de BI en niveles y la plataforma analitica(ver Figura ~\ref{fig:tipicoUsoEstilosAnaliticos}) `` utilizarlo como una guía genérica que puede ser ajustado de acuerdo a las características específicas de la organización.
@@ -300,23 +309,23 @@ El portal de información  es el área de trabajo donde los usuarios de negocio pu
 
 Capacidades típicas de la plataforma:
 \begin{itemize}[noitemsep]	
-	\item Informes
-	\item Dashboards
-	\item Integración Microsoft Office
-	\item BI móvil
-	\item Análisis integrada
+	\item Informes.
+	\item Dashboards.
+	\item Integración Microsoft Office.
+	\item BI móvil.
+	\item Análisis integrada.
 \end{itemize}
 
 
 
 Ejemplo de herramientas y proveedores:
 \begin{itemize}[noitemsep]	
-	\item SAP BusinessObjects
-	\item IBM Cognos
-	\item Oracle BI
-	\item Microsoft Reporting Services
-	\item MicroStrategy
-	\item Information Builders WebFocus
+	\item SAP BusinessObjects.
+	\item IBM Cognos.
+	\item Oracle BI.
+	\item Microsoft Reporting Services.
+	\item MicroStrategy.
+	\item Information Builders WebFocus.
 \end{itemize}
 
 
@@ -328,27 +337,27 @@ En el espectro de análisis, el workbench es capaz de proporcionar análisis descr
 
 Capacidades típicas de la plataforma:
 \begin{itemize}[noitemsep]	
-	\item Data discovery
-	\item Ad hoc informes/consultas
-	\item Inteligencia geoespacial y localización
-	\item Análisis integrado avanzado
-	\item OLAP
-	\item Mashup de datos y modelado de usuarios de negocios
-	\item Colaboración
-	\item Filtrado y manipulación de datos
+	\item Data discovery.
+	\item Ad hoc informes/consultas.
+	\item Inteligencia geoespacial y localización.
+	\item Análisis integrado avanzado.
+	\item OLAP.
+	\item Mashup de datos y modelado de usuarios de negocios.
+	\item Colaboración.
+	\item Filtrado y manipulación de datos.
 \end{itemize}
 
 Ejemplo de herramientas y proveedores:
 \begin{itemize}[noitemsep]
-	\item Tableau Software
-	\item Qlik
-	\item Tibco Spotfire
-	\item SAS Visual Analytics
-	\item SAP Lumira
-	\item Oracle Endeca Information Discovery
-	\item MicroStrategy Visual Insight
-	\item Alteryx
-	\item Microsoft SQL Server Analysis Services and Power BI
+	\item Tableau Software.
+	\item Qlik.
+	\item Tibco Spotfire.
+	\item SAS Visual Analytics.
+	\item SAP Lumira.
+	\item Oracle Endeca Information Discovery.
+	\item MicroStrategy Visual Insight.
+	\item Alteryx.
+	\item Microsoft SQL Server Analysis Services and Power BI.
 \end{itemize}
 
 
@@ -361,33 +370,33 @@ Un amplio conjunto de capacidades técnicas es esperado y a menudo proporcionado 
 
 Capacidades típicas de la plataforma:
 \begin{itemize}[noitemsep]
-	\item Acceso avanzado de datos
-	\item Soporte para fuentes de big data
-	\item Análisis descriptivo avanzado
-	\item Análisis predictivo
-	\item Predicción
-	\item Optimización
-	\item Simulación
-	\item Otros análisis avanzado
-	\item Aunque no capacidades BI, Hadoop y otras bases de datos NoSQL también deben ser referenciados aquí
+	\item Acceso avanzado de datos.
+	\item Soporte para fuentes de big data.
+	\item Análisis descriptivo avanzado.
+	\item Análisis predictivo.
+	\item Predicción.
+	\item Optimización.
+	\item Simulación.
+	\item Otros análisis avanzado.
+	\item Aunque no capacidades BI, Hadoop y otras bases de datos NoSQL también deben ser referenciados aquí.
 \end{itemize}
 
 
 
 Ejemplo de herramientas y proveedores:
 \begin{itemize}[noitemsep]
-	\item SAS Enterprise Miner
-	\item IBM SPSS
-	\item SAP InfiniteInsight
-	\item Revolution Analytics y R
-	\item RapidMiner
-	\item Knime
-	\item Alteryx
-	\item FICO
-	\item Dell StatSoft
-	\item Cloudera
-	\item Hortonworks
-	\item MapR y otras distribuciones Hadoop
+	\item SAS Enterprise Miner.
+	\item IBM SPSS.
+	\item SAP InfiniteInsight.
+	\item Revolution Analytics y R.
+	\item RapidMiner.
+	\item Knime.
+	\item Alteryx.
+	\item FICO.
+	\item Dell StatSoft.
+	\item Cloudera.
+	\item Hortonworks.
+	\item MapR y otras distribuciones Hadoop.
 \end{itemize}
 
 
