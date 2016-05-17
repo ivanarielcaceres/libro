@@ -152,19 +152,25 @@
 
 		%Insertar capitulos
 		%Evita espacios entre capitulos
-		\let\clearpage\relax
-		\input{contenido/introduccion}
-		\input{contenido/objetivos}
-		\input{contenido/justificacion}
-		\input{contenido/cap1}		
-		\input{contenido/cap2}
-		\input{contenido/cap3}
-		\input{contenido/cap4}
-		\input{contenido/cap5}
+		%\let\clearpage\relax
+		\begingroup
+			\renewcommand{\cleardoublepage}{}
+			\renewcommand{\clearpage}{}
+			\input{contenido/introduccion}
+			\input{contenido/objetivos}
+			\input{contenido/justificacion}
+			\input{contenido/cap1}		
+			\input{contenido/cap2}
+			\input{contenido/cap3}
+			\input{contenido/cap4}
+			\input{contenido/cap5}
 
-		%GLOSARIO		
-		\clearpage		
-		\printglossary[style=mylong,title=Lista de Siglas y Acrónimos]		
+			%GLOSARIO		
+			\pagebreak
+			\printglossary[style=mylong,title=Lista de Siglas y Acrónimos]				
+		\endgroup
+
+	
 		
 		\clearpage
 		\renewcommand{\bibname}{Bibliografía}
