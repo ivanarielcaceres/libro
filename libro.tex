@@ -20,11 +20,12 @@
 	\usepackage[nopostdot,style=super,nonumberlist,toc]{glossaries}
 	\usepackage{float}
 	\restylefloat{table}
-	\usepackage{titlesec}
+	\usepackage[compact]{titlesec}
 	\usepackage[spanish]{babel}
 	\usepackage{apacite}
 	\usepackage{url}
 	\usepackage{enumitem}
+	
 
 
 \titleformat{\chapter}[display]
@@ -81,8 +82,14 @@
 	}
 	\makeglossaries% Inicia
 
+	%headers spacing
+	%\titlespacing{\section}{0pt}{*0}{*0}
+	%\titlespacing{\subsection}{0pt}{*0}{*0}
+	%\titlespacing{\subsubsection}{0pt}{*0}{*0}
 	
 	\begin{document}
+		%elimina la justificacion de texto vertical
+		\raggedbottom
 		\pagestyle{preliminary}\pagenumbering{roman}
 		\fancypagestyle{plain}{\pagestyle{preliminary}}% Correct plain page style
 		
@@ -144,6 +151,8 @@
 		\renewcommand{\chaptername}{CAPITULO}
 
 		%Insertar capitulos
+		%Evita espacios entre capitulos
+		\let\clearpage\relax
 		\input{contenido/introduccion}
 		\input{contenido/objetivos}
 		\input{contenido/justificacion}
