@@ -11,19 +11,27 @@ En el presente trabajo son analizados datos de la ANDE y de la DGEEC, relacionan
 
 \subsection{Datos de la ANDE y de la DGEEC}
 
-Se cuenta con datos de consumo de energía eléctrica, facturaciones, grupos de consumo (residencial, industrial, exportación, comercial, gubernamental y otros), por año (2000-2014), departamento y distrito. Estos datos fueron solicitados formalmente a la institución a través de la Facultad de Ciencias y tecnología de la Universidad Católica, la cual tuvimos una respuesta favorable para proceder.
+Se cuenta con datos de consumo de energía eléctrica, facturaciones, grupos de consumo (residencial, industrial, exportación, comercial, gubernamental y otros), por año (2000-2014), por departamento y distrito. Estos datos fueron solicitados formalmente a la institución por medio de la Facultad de Ciencias y Tecnología de la Universidad Católica, a la cual tuvimos una respuesta favorable.
 
 \subsection{Dashboard de control / monitoramiento}
 	
-En esta sección se muestra 4 ejemplos de paneles informativos, resultantes del relacionamiento de ambos conjunto de datos.  Una de las técnicas utilizada para medir el crecimiento es la  ``tasa de crecimiento``, la cual se calcula el porcentaje de crecimiento que hubo por cada año (Ej: Si al cerrar el año 2014, la cantidad de clientes llegó a 1.000.000 y en el año 2015 aumentó 100.000, esto quiere decir que en el año 2015, la tasa de crecimiento de los clientes fue del 10\%, es decir, hubo un crecimiento positivo y la cantidad de clientes ha aumentado respecto al año anterior). Suponiendo que en el año 2016 la ANDE cierra con un total de 1.000.000 de clientes, su crecimiento sería 10\% menor al año anterior.
-La fórmula empleada (ver Figura ~\ref{fig:formula}), donde ``n`` es el año actual y ``n-1`` el año anterior, PIB es una variable que indica, en el caso  de nuestra comparación, la cantidad de clientes que posee la ANDE .
+En esta sección se presentan 4 productos construidos en esta Tesis, los cuales son Paneles de Control, en donde se relacionan conjuntos de datos de la ANDE y de la DGEEC. Una de las técnicas utilizadas para medir el crecimiento es la tasa de crecimiento, la cual se obtiene de la siguiente forma:
+
+Es calculado el porcentaje de crecimiento ocurrido por cada año (Ej: Si al cerrar el año 2014, la cantidad de clientes fue de 1.000.000 y en el año 2015 aumentó 100.000, esto quiere decir que en el año 2015, la tasa de crecimiento de los clientes fue del 10\%, es decir, hubo un crecimiento positivo y la cantidad de clientes ha aumentado). Suponiendo que en el año 2016 la ANDE cierra con un total de 1.000.000 de clientes, su crecimiento ser a 10\% menor al año anterior. La fórmula empleada (ver Fórmula abajo), donde n es el año actual y n-1 el año anterior, PIB indica la cantidad de clientes que posee la ANDE .
+
+
+\begin{equation}
+  t_n = \cfrac{PIB_n - PIB_{n-1}}{PIB_{n-1}} \times 100 \nonumber
+\end{equation}
+
+
 	
-\textsc{\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\linewidth]{figuras/formula}
-	\caption{Formúla para hallar tasa de crecimiento.}
-	\label{fig:formula}
-\end{figure}}
+%\textsc{\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=0.7\linewidth]{figuras/formula}
+%	\caption{Formúla para hallar tasa de crecimiento.}
+%	\label{fig:formula}
+%\end{figure}}
 	
 \include{contenido/cap3/dashboard1}
 \include{contenido/cap3/dashboard2}
