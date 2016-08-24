@@ -9,31 +9,21 @@ En la figura ~\ref{fig:TasaDeCrecimientoVsConsumoDeEnergia} se presenta un panel
 	\label{fig:TasaDeCrecimientoVsConsumoDeEnergia}
 \end{figure}}
 
-En el mapa se presentan gráficos de tortas por cada departamento, que representan los grupos de consumidores (Comercial, Industrial, Residencial y otros), donde cada color representa a un grupo en específico. Se puede ver que en la mayoría de los departamentos el grupo de consumo ``residencial``,  ``industrial`` y ``comercial`` son las que ocupan la mayor porción. Estos grupos sirven como filtro para los demás gráficos, por ejemplo, si se presiona sobre cualquier grupo de consumidores, los demás gráficos se actualizarán en tiempo real. Al ubicar el mouse sobre alguna porción de la torta, se muestra el consumo equivalente del departamento correspondiente.
-
-\textsc{\begin{figure}[H]
-	\centering
-	\includegraphics[width=\linewidth]{figuras/TasaDeCrecimientoVsConsumoDeEnergia1}
-	\caption{Tasa de crecimiento vs Consumo de energía, filtrado por el departamento Alto Paraná}
-	\label{fig:TasaDeCrecimientoVsConsumoDeEnergia1}
-\end{figure}}
-
-
-En este gráfico se utilizó datos de los clientes de la entidad y el consumo de energía eléctrica.  Se calcula la tasa de crecimiento anual de ambos. Observamos que el aumento de los clientes de la entidad es similar cada año, sin embargo, la tasa de crecimiento del consumo de energía es muy inestable. Existen ocasiones en que aumenta el 10\% o 20\% más cada año y también en la que disminuye la misma cantidad y esto sin que haya mucha variación en la cantidad de clientes.
+En el gráfico situado a la derecha del mapa (~\ref{fig:TasaDeCrecimientoVsConsumoDeEnergia2}), se tiene el consumo y crecimiento de clientes. Para un mejor analisis fue necesario suavizar los datos calculando lineas de tendencia, debido a una inestabilidad de los datos de consumo. Así se puede apreciar, que existe una tendencia de crecimiento sostenido durante el tiempo de clientes. Sin embargo, la tendencia que el consumo crezca es mayor al de clientes.
 
 \textsc{\begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{figuras/TasaDeCrecimientoVsConsumoDeEnergia2}
-	\caption{Tasa de crecimiento vs Consumo de energía}
+	\caption{Tasa de crecimiento vs Consumo de energía, filtrado por el departamento Alto Paraná}
 	\label{fig:TasaDeCrecimientoVsConsumoDeEnergia2}
 \end{figure}}
 
-En este gráfico, titulado ``Proyección de clientes y consumo para los próximos 5 años`` se realiza una comparación entre los clientes y el consumo de energía eléctrica, similar que el gráfico anterior, pero con la diferencia de que en este gráfico se muestra la información con una unidad de medida diferente. A la izquierda tenemos el valor ``Cantidad de clientes`` y a la derecha el ``consumo`` en GWh.
-
+Debajo se presenta un cuadro con la línea de cada valor (Figura ~\ref{fig:ProyeccionDeClientesYConsumosParaLosProximos5Anos}), de crecimiento y consumo. Con el uso de un recurso disponible que cuenta la herramienta escogida Tableau, es posible realizar análisis predictivo  (forecasting) del crecimiento y consumo. Tableau utiliza un algoritmo llamado Suavizado Exponencial, muy conocido en el área de Matemáticas Estadísticas. En este gráfico se puede notar que existe una mayor probabilidad que en los próximos años aumente considerablemente el consumo, superando su media. Sin embargo, se nota que el ritmo de crecimiento de clientes es sostenible, y no tiene una alta probabilidad de sufrir un aumento abrupto.
 
 \textsc{\begin{figure}[H]
-	\centering
-	\includegraphics[width=\linewidth]{figuras/ProyeccionDeClientesYConsumosParaLosProximos5Anos}
-	\caption{Proyección de clientes y consumos para los próximos 5 años}
-	\label{fig:ProyeccionDeClientesYConsumosParaLosProximos5Anos}
-\end{figure}}
+		\centering
+		\includegraphics[width=\linewidth]{figuras/ProyeccionDeClientesYConsumosParaLosProximos5Anos}
+		\caption{Proyección de clientes y consumos para los próximos 5 años}
+		\label{fig:ProyeccionDeClientesYConsumosParaLosProximos5Anos}
+	\end{figure}}
+	
