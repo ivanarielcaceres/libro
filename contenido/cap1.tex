@@ -13,12 +13,9 @@ Esto produce grandes cantidades de información que pueden llevar al desarrollo d
 Las tecnologías de BI ofrecen vistas históricas, actuales y predictivas de las operaciones de una empresa. Algunas de las funcionalidades más comunes de BI son reportes, procesamiento analítico en línea (en adelante OLAP, Analytical Processing), minería de datos, minería de procesos, procesamiento de eventos complejos, gestión del  rendimiento empresarial, benchmarking, minería de texto, análisis predictivos y análisis prescriptivos. BI tiene como objetivo apoyar una mejor toma de decisiones, por tanto, un sistema de BI puede también ser llamado sistema de apoyo a las decisiones o DSS (del inglés, decision support system)\cite{rud2009business}.\\
 Las herramientas de BI son diseñadas para obtener, analizar y reportar datos. Estas herramientas generalmente leen datos que han sido previamente almacenados, frecuentemente, aunque no necesariamente en un almacén de datos (en adelante, datawarehouse). BI ha experimentado un alto crecimiento y ha ganado mucha popularidad. De acuerdo a \cite{hancock2006practical}, BI es ``un conjunto de conceptos, métodos, y tecnologías para convertir datos separados o aislados de una organización en información útil para mejorar el rendimiento del negocio``.\\
 En un ambiente de BI, se extraen datos de diferentes fuentes, se transforman y posteriormente se cargan (ETL, extraction - transformation - load) dentro de un datawarehouse y desde este repositorio son utilizados para generar reportes transversales a toda la organización. El proceso de BI y sus varias etapas son mostrados en la Figura ~\ref{fig:EtapasDeBiComoFuentesDeDatosDeCalidad}. La calidad de los datos juegan un rol crítico e importante en el éxito de la inteligencia de negocios, ya que la mala calidad de los datos pueden afectar las decisiones de negocio en todos los niveles de la organización, además de impedir el crecimiento de la organización \cite{kumari2013business}.\\
-\textsc{\begin{figure}[H]
-\centering
-\includegraphics[width=160mm]{Business-Intelligence-stages-as-data-quality-sources-esp.png}
-\caption{Etapas de BI como fuentes de datos de calidad}
-\label{fig:EtapasDeBiComoFuentesDeDatosDeCalidad}
-\end{figure}}
+
+\include{figura/figura-1}
+
 \noindent
 Una cuestión fundamental es el hecho que una organización corre sobre datos; y actúa como insumo para el motor de la industria corporativa. Una organización no puede comprender a sus clientes, proveedores, competidores o a su propia gente, procesos, y rendimiento sin datos de buena calidad. Por consiguiente, la alta dirección de una empresa y el área de TI (tecnología de la información) deberían trabajar juntos para asegurar datos de alta calidad  \cite{eckerson2009ensures}.
 
@@ -33,7 +30,7 @@ Conocido como minería de datos y análisis predictivos, toma las ventajas de las 
 
 
 \paragraph{BI en tiempo real}\hspace{0pt} \\ \indent
-Permite la distribución de métricas en tiempo real a través de emails, sistemas de mensajería instantánea y/o pantallas interactivas. 
+Permite la distribución de métricas en tiempo real a través de emails, sistemas de mensajería instantánea y/o pantallas interactivas.
 
 \paragraph{Datawarehouse y Datamarts}\hspace{0pt} \\ \indent
 El datawarehouse es un componente importante de BI. El datawarehouse soporta la propagación física de los datos manejando grandes volúmenes de registros de las organizaciones para integración, limpieza,  agregación y tareas de consulta.\cite{gangadharan2004business}\\
@@ -46,7 +43,7 @@ Las fuentes de datos pueden ser bases de datos operacionales, datos históricos, 
 \subsubsection{Beneficios de BI}
 
 BI provee muchos beneficios a las compañías que lo utilizan. Puede ayudar a eliminar muchas conjeturas erróneas dentro de una organización, mejorando la comunicación entre departamentos mientras se coordinan las actividades, y apoyan a las organizaciones para responder rápidamente a cambios de condiciones financieras o preferencias de clientes. BI puede ayudar a mejorar el rendimiento general de una organización \cite{ranjan2009business}.\\
-La información es frecuentemente considerada como el segundo recurso más importante que una compañía tiene (lo más valorable de una compañía son las personas). Cuando una compañía puede tomar decisiones basadas en información oportuna y precisa, puede ayudar a mejorar su rendimiento en su segmento de mercado. BI también agiliza la toma de decisiones, ayuda a actuar rápida y correctamente con la información adecuada antes de otras empresas de la competencia. También pueden mejorar la experiencia del cliente, teniendo en cuenta la respuesta oportuna y adecuada a los problemas y prioridades de los mismos. A continuación se listan algunos de estos beneficios: 
+La información es frecuentemente considerada como el segundo recurso más importante que una compañía tiene (lo más valorable de una compañía son las personas). Cuando una compañía puede tomar decisiones basadas en información oportuna y precisa, puede ayudar a mejorar su rendimiento en su segmento de mercado. BI también agiliza la toma de decisiones, ayuda a actuar rápida y correctamente con la información adecuada antes de otras empresas de la competencia. También pueden mejorar la experiencia del cliente, teniendo en cuenta la respuesta oportuna y adecuada a los problemas y prioridades de los mismos. A continuación se listan algunos de estos beneficios:
 
 \begin{itemize}[noitemsep, nolistsep]
 \item   Con herramientas de BI, los empleados pueden fácilmente convertir sus conocimientos de negocio en inteligencia analítica para resolver muchas cuestiones de negocio, tales como incrementar la tasa de respuestas desde correos electrónicos, teléfonos, y mejorar las campañas de ventas desde internet.
@@ -69,11 +66,11 @@ La información es frecuentemente considerada como el segundo recurso más importa
 
 \item  Reducir el tiempo fuera de un equipamiento mediante la aplicación de mantenimiento predictivo.
 
-\item  Determinar con el análisis de deserción y rotación de clientes, la causa por la cual los clientes se van a los competidores o se convierten en nuestros clientes. 
+\item  Determinar con el análisis de deserción y rotación de clientes, la causa por la cual los clientes se van a los competidores o se convierten en nuestros clientes.
 
 \item Detectar y disuadir comportamientos fraudulentos, por ejemplo, de picos de uso cuando las tarjetas de  crédito o tarjetas telefónicas son robadas.
 
-\item Identificar nuevos compuestos de fármacos moleculares prometedores. 
+\item Identificar nuevos compuestos de fármacos moleculares prometedores.
 \end{itemize}
 
 
@@ -82,7 +79,7 @@ La información es frecuentemente considerada como el segundo recurso más importa
 
 La inteligencia empresarial provee datos organizacionales de tal manera que los filtros de conocimientos organizacionales puedan fácilmente asociarse con estos datos y volverlos en información para la organización. Las personas involucradas en procesos de inteligencia de negocios podrían usar software y otras tecnologías para reunir, almacenar, analizar, proveer accesos a datos, y presentar esos datos de una manera simple y útil.\\
 El software ayuda en la  gestión de una organización, y a las personas a hacer mejores decisiones de negocios, teniendo la información precisa, actualizada, y relevante cuando lo necesiten. Algunas empresas usan data warehouse porque es un conjunto de información lógica recolectado desde varias bases de datos operacionales con el objetivo de crear inteligencia de negocios \cite{ranjan2009business}.\\
-Para que los sistemas BI trabajen efectivamente, existen algunas restricciones técnicas que deberían ser tratadas: 
+Para que los sistemas BI trabajen efectivamente, existen algunas restricciones técnicas que deberían ser tratadas:
 
 \begin{itemize}[noitemsep, nolistsep]
 \item Seguridad y acceso de usuarios al data warehouse.
@@ -135,13 +132,6 @@ Las empresas aún sienten que BI tiene complejidades relacionadas con la tecnolog
 Los sistemas tradicionales de BI consisten en una base de datos en el back-end, una interfaz de usuario en el front-end, software que procesa la información para producir la propia inteligencia de negocios, y un sistema de informes. Las capacidades de BI incluyen apoyo a la decisión, procesamiento analítico en linea, análisis estadísticos,  predicción y minería de datos.\\
 Diferentes sectores como fabricantes, comercios electrónicos, empresas de telecomunicaciones, aerolíneas, minoristas, sistemas de salud, servicios financieros, bioinformática y hoteles utilizan BI para apoyo a clientes, investigación de mercado, segmentación, rentabilidad del producto, análisis y distribución de stock, análisis estadístico, informes multidimensionales, detección fraudes, entre otros.\\
 BI y minería de datos es un área que está fuertemente influenciado por técnicas estadísticas tradicionales, y la mayoría de los métodos de minería de datos revela una fuerte base de métodos estadísticos y de análisis de datos. Algunas de las técnicas tradicionales de minería de datos incluyen clasificación, agrupación, análisis de valores atípicos, patrones secuenciales, análisis de series temporales, la predicción, la regresión, análisis de enlaces (asociaciones),  y métodos multidimensionales incluyendo el procesamiento analítico en línea \gls{sig:OLAP}. Estos pueden clasificarse en una serie de técnicas de minería de datos, que se clasifican e ilustran en la Tabla 1 \cite{goebel1999survey}.
-
-%\textsc{\begin{figure}[!htb]
-%	\centering
-%	\includegraphics[width=160mm]{insight-bi.png}
-%	\caption{Representación de un dashboard \gls{sig:BI}}
-%	\label{fig:BI}
-%\end{figure}}
 
 %\vspace*{2\baselineskip}
 \newlength\q
@@ -201,10 +191,10 @@ Hay una serie de defectos relacionados en la mayoría de las organizaciones con r
 
 \item Las informaciones creadas  o manipuladas por los usuarios de negocios inevitablemente producirán discrepancias a través de diferentes análisis, lo que lleva a decisiones equivocadas,  generando caos en la organización a través del tiempo.
 
-\item La responsabilidad del departamento TI para la gestión de información termina en la capa semántica de BI y en los contenidos orientados a TI. 
+\item La responsabilidad del departamento TI para la gestión de información termina en la capa semántica de BI y en los contenidos orientados a TI.
 
 \item Procesos analíticos orientados al negocio están fuera del alcance y no soportados por TI.
-Hay varios problemas orientados a la información documentados en el mundo BI y análisis, que obligan a los líderes de BI a seguir estas creencias y desplegar un entorno de BI centralizado y monolítico, que termina siendo impuesta a los usuarios, independientemente de su adecuación a las necesidades. 
+Hay varios problemas orientados a la información documentados en el mundo BI y análisis, que obligan a los líderes de BI a seguir estas creencias y desplegar un entorno de BI centralizado y monolítico, que termina siendo impuesta a los usuarios, independientemente de su adecuación a las necesidades.
 
 \item Los proveedores licenciados de BI, a favor de sus propias plataformas, apoyan este enfoque.
 
@@ -213,26 +203,18 @@ Hay varios problemas orientados a la información documentados en el mundo BI y a
 Según Gartner, una plataforma analítica necesitan evolucionar más allá del pensamiento monolítico. Debe ocurrir una transformación para ofrecer diferentes soluciones para las diferentes necesidades del usuario, con un conjunto diverso de niveles de integración, y encontrar un equilibrio entre confianza y agilidad. El propósito es ayudar a los usuarios a alcanzar sus objetivos de negocio a través del uso de la tecnología apropiada, no para erradicar las soluciones de BI orientados al usuario que resuelven parcialmente sus problemas de hoy.\\
 El entorno de BI y el análisis resultante también exigirá cambios en los procesos de gestión de la información, como atribuir nuevas responsabilidades a diferentes personas en la organización.\\
 A continuación el framework de análisis de negocios.
-La figura ~\ref{fig:FrameworkAnaliticoNegociosGartner} presenta el framework de análisis de negocios de Gartner. 
+La figura ~\ref{fig:FrameworkAnaliticoNegociosGartner} presenta el framework de análisis de negocios de Gartner.
 
-\textsc{\begin{figure}[H]
-\centering
-\includegraphics[width=160mm]{Framework-Analitico-de-Negocios-Gartner.png}
-\caption{Framework Analitico de Negocios Gartner}
-\label{fig:FrameworkAnaliticoNegociosGartner}
-\end{figure}}
+\include{figura/figura-2}
+
 \noindent
 El framework de análisis de Gartner identifica las personas, los procesos y componentes de la plataforma que apoyan la transformación de la información en un mejor rendimiento de la organización. El uso de esta herramienta está hecha por la lectura desde arriba hacia abajo, comenzando con los resultados del negocio y luego descifrando las composiciones analíticas de apoyo y la información necesaria para alcanzarlos. De acuerdo a las necesidades de los usuarios, la plataforma debe ser re-diseñada con un amplio conjunto de capacidades técnicas (llenando los vacíos), nuevas responsabilidades y organización. Centrándose en las herramientas o normalización de proveedor  por sí sola no es la respuesta.\\
 El framework es también muy útil para definir los estados actuales y futuros de la arquitectura. La diferencia entre ellos es el mapa de rutas e incluye cambios en personas y procesos.  La organización muy probablemente también necesitará re-organizar y capacitar a los proveedores y usuarios de BI y análisis.
 Los usuarios de negocio deben ganar acceso a las herramientas analíticas  adecuadas, de acuerdo a sus metas y habilidades, y un rango comprensivo de fuente de datos con tipos de datos variados, granularidad adecuada y accesos apropiados.
 Teniendo en cuenta el espectro de capacidades analíticas con énfasis en las plataformas, en particular, el componente de capacidad analítica, podemos notar cuatro estilos analíticos que se detallaran a continuación  (Figura~\ref{fig:espectroAnalitico}).
 
-\textsc{\begin{figure}[H]
-\centering
-\includegraphics[width=160mm]{Espectro-Analitico.png}
-\caption{Espectro Analítico}
-\label{fig:espectroAnalitico}
-\end{figure}}
+\include{figura/figura-9}
+
 \noindent
 Las capacidades analíticas implementadas en organizaciones son a menudo limitadas el análisis descriptivo, a través de reportes básicos y dashboards. Con esto, la pregunta, ``Qué paso\mbox{?}`` puede ser respondida. Después de conocer ``Que,`` , lo más probable es que los usuarios también pregunten, ``Por qué pasó\mbox{?}``.  Abordar adecuadamente esto requiere mucha más agilidad y más capacidades avanzadas de exploración de la información. Despliegues de BI tradicionales tienden a tener huecos en esta área, pero TI por lo general pasa por alto el impacto de esta problemática y continúa impulsando el estándar del proveedor y sus herramientas no aptas-para-propósito. Como consecuencia, los usuarios recurrirán a Excel, consultas ad hoc, extracciones de datos y a los equipos de shadow TI para lograr sus metas de análisis.\\
 Los líderes de BI deben extender el BI y la plataforma analítica hasta el análisis de diagnóstico para complementar el análisis descriptivo. Aquí es donde OLAP y los modelos de datos en memoria son utilizadas para proporcionar una navegación fácil y rápida de datos sin una consulta predefinida. Aprovechando mejoras en el nivel de acceso a datos, también vemos la necesidad de mejorar las capas semánticas abstrayendo la complejidad del modelo físico subyacente. Esto puede hacer que sea mucho más fácil para el descubrimiento de autoservicio sin el cuello de botella de TI que se encuentra en un típico equipo de BI.\\
@@ -251,13 +233,7 @@ Los líderes de BI deben seguir las herramientas fundamentales descritas anterior
 \noindent
 En la figura ~\ref{fig:tipicoUsoEstilosAnaliticos} se presenta la representación de BI en niveles y la plataforma analítica, la cual puede ser utilizada como una guía genérica que puede ser ajustado de acuerdo a las características específicas de la organización.
 
-
-\textsc{\begin{figure}[H]
-	\centering
-	\includegraphics[width=160mm]{Tipico-uso-de-estilos-analiticos.png}
-	\caption{Típico uso de estilos analíticos}
-	\label{fig:tipicoUsoEstilosAnaliticos}
-\end{figure}}
+\include{figura/figura-3}
 
 \noindent
 Para hacer realidad la visión de los tres niveles y ser capaz de maximizar sus fortalezas, los líderes de BI necesitan implementar nuevas capacidades técnicas para proporcionar nuevos estilos de análisis, mejorar el uso de las herramientas existentes a través de una mejor integración global, y proporcionar metadatos comunes y gobernanza. Procesos, roles de personas y responsabilidades, son de suma importancia para el éxito.\\
@@ -270,7 +246,7 @@ Seguir de cerca las características de sistemas de registros desde el Pace Layer
 El portal de información es el área de trabajo donde los usuarios de negocio pueden encontrar rápida y fácilmente las métricas clave de confianza con la cual la organización mide su rendimiento. Por lo general hecho de capacidades de informes y dashboard que proporciona contenido para los consumidores de información. Sus productos son el resultado de un proceso de desarrollo formal que abarca que un usuario de negocios establezca requisitos y un especialista técnico(típicamente de TI, pero cada vez más de negocio) los implemente.
 \noindent
 Capacidades típicas de la plataforma:
-\begin{itemize}[noitemsep, nolistsep]	
+\begin{itemize}[noitemsep, nolistsep]
 	\item Informes.
 	\item Dashboards.
 	\item Integración Microsoft Office.
@@ -293,7 +269,7 @@ En el espectro de análisis, el workbench es capaz de proporcionar análisis descr
 
 \noindent
 Capacidades típicas de la plataforma:
-\begin{itemize}[noitemsep, nolistsep]	
+\begin{itemize}[noitemsep, nolistsep]
 	\item Data discovery.
 	\item Informes/consultas Ad hoc.
 	\item Inteligencia geoespacial y localización.
@@ -358,9 +334,4 @@ Ejemplo de herramientas y proveedores:
 Entender las características de BI en niveles y la plataforma analítica.
 La siguiente tabla resume las características que posee cada una de las tres capas. Los líderes de BI deberían deberán intentar entender los huecos en su plataforma analítica, y cambiar sus estrategias en consecuencia.
 
-\textsc{\begin{figure}[H]
-		%\centering
-		\includegraphics[width=160mm,height=0.9\textheight]{CaracteristicasBiNivelesPlataformaAnalitica.png}
-		\caption{Características de BI en niveles y Plataforma Analítica}
-		\label{fig:caracteristicasBiNivelesPlataformaAnalitica}
-	\end{figure}}
+\include{figura/figura-10}
