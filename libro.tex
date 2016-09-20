@@ -1,12 +1,13 @@
 % !TeX document-id = {691fd987-4a4c-464c-b0de-b4bb28391dc9}
 % !TeX program = PdfLaTeX
 % !TeX encoding = ISO-8859-1
-% !TeX spellcheck = es_ES, en_US
+% !TeX spellcheck = es_ES
 
 
 
 	
 \documentclass[letterpaper,12pt]{book}
+	
 	\usepackage{indentfirst}
 	\setlength\parindent{2.56cm}
 	
@@ -15,30 +16,36 @@
 	\usepackage[left=2.54cm,top=2.54cm,right=2.54cm,bottom=2.54cm]{geometry} 
 	\usepackage{graphicx} 
 	\usepackage{wrapfig}
-	\graphicspath{ {figuras/} } 
+	\graphicspath{ {imagenes/} } 
 	\usepackage{fancyhdr} 
 	\usepackage{sectsty}
 	\usepackage{tocloft}
 	\usepackage[nopostdot,style=super,nonumberlist,toc]{glossaries}
 	\usepackage{float}
 	\restylefloat{table}
-	\usepackage[compact]{titlesec}
+	\usepackage[center]{titlesec}
 	\usepackage[spanish]{babel}
 	\usepackage{apacite}
 	\usepackage{url}
 	\usepackage{enumitem}
-
-\titleformat{\chapter}[display]
-{\normalfont\bfseries}{}{0pt}{\Large}
-
-
-
-%\titleformat{\section}
-%{\normalfont\Large\bfseries}
-%{\thesection}{1em}{}
+	%to external document referencing
+	\usepackage{xr}
+	%add source to figures
+	\usepackage{caption}
+	%Para usar interlineado especifico en algunas partes
+	\usepackage{setspace}	
+	
+	\titleformat{\chapter}[display]
+	{\normalfont\bfseries}{}{0pt}{\Large}
+	
+	
+	
+	%\titleformat{\section}
+	%{\normalfont\Large\bfseries}
+	%{\thesection}{1em}{}
 
 	%Centra el titulo de los capitulos
-	\chapterfont{\centering}
+	%\chapterfont{\centering}
 	%Centra el titulo de las secciones
 	%\sectionfont{\centering}
 	%Centra el titulo de las sub-secciones
@@ -94,30 +101,35 @@
 	%\titlespacing{\subsubsection}{0pt}{*0}{*0}
 	%\everymath{\displaystyle}
 	\DeclareMathSizes{12}{20}{14}{10}
-	\begin{document}
+	
+	\input{importFigures}
+
+	%interlineado
+	\renewcommand{\baselinestretch}{2}	
+\begin{document}
+		
 		%elimina la justificacion de texto vertical
 		\raggedbottom
 		\pagestyle{preliminary}\pagenumbering{roman}
 		\fancypagestyle{plain}{\pagestyle{preliminary}}% Correct plain page style
 		
 		%Cubiertas o tapas del libro
-		\include{cubierta/cubierta-1}
-		\clearpage\null
-		\include{cubierta/cubierta-2}
-		\clearpage\null
-		\include{cubierta/cubierta-3}
-		\clearpage\null
-		\include{cubierta/cubierta-4}
-		\include{cubierta/cubierta-5}
-		\include{cubierta/dedicatoria}
-		\include{cubierta/agradecimientoAutor1}
-		\include{cubierta/agradecimientoAutor2}
-		\include{cubierta/resumen}
-		\include{cubierta/abstract}
-		\include{cubierta/glosario}	
+		\include{cubierta_cubierta-1}
+		%\clearpage\null
+		\include{cubierta_cubierta-2}
+		%\clearpage\null
+		\include{cubierta_cubierta-3}
+		%\clearpage\null
+		\include{cubierta_cubierta-4}
+		\include{cubierta_cubierta-5}
+				
+		%Lista de contenido
+		\pagebreak				
+		\renewcommand{\contentsname}{ÍNDICE}
+		\tableofcontents
 		
-		
-		%Lista de Figuras		
+		%Lista de Figuras
+		\pagebreak		
 		\newlength{\mylen}		
 		\renewcommand{\listfigurename}{ÍNDICE DE FIGURAS}
 		\renewcommand{\figurename}{Figura}
@@ -126,20 +138,23 @@
 		\settowidth{\mylen}{\cftfigpresnum\cftfigaftersnum}
 		\addtolength{\cftfignumwidth}{\mylen}
 		\listoffigures
-
 		
 		%Lista de Tablas
-		\clearpage		
+		\pagebreak		
 		\renewcommand{\listtablename}{LISTA DE TABLAS}
 		\listoftables
 
-
+		%GLOSARIO		
+		\pagebreak
+		\printglossary[style=mylong,title=Lista de Siglas y Acrónimos]
 		
-	
-		%Lista de contenido
-		\clearpage				
-		\renewcommand{\contentsname}{ÍNDICE}
-		\tableofcontents
+		\include{cubierta_dedicatoria}
+		\input{cubierta_agradecimientoAutor1}
+		\input{cubierta_agradecimientoAutor2}
+		
+		\input{cubierta_resumen}
+		\input{cubierta_abstract}
+		\input{cubierta_glosario}
 		
 		\title{Data Discovery Paraguay}
 		\author{Ariel Hernán Landaida Duarte, Iván Ariel Caceres Cañete}
@@ -158,24 +173,20 @@
 		%Oculta la palabra Chapter y muestra solo el nombre que define para cada capitulo
 		\renewcommand{\chaptername}{CAPITULO}
 
-		%Insertar capitulos
-		%Evita espacios entre capitulos
-		%\let\clearpage\relax
+		%Insertar capitulos		
 		\begingroup
-			\renewcommand{\cleardoublepage}{}
-			\renewcommand{\clearpage}{}
-			\input{contenido/introduccion}
-			\input{contenido/objetivos}
-			\input{contenido/justificacion}
-			\input{contenido/cap1}		
-			\input{contenido/cap2}
-			\input{contenido/cap3}
-			\input{contenido/cap4}
-			\input{contenido/cap5}
-
-			%GLOSARIO		
-			\pagebreak
-			\printglossary[style=mylong,title=Lista de Siglas y Acrónimos]				
+			%\renewcommand{\cleardoublepage}{}
+			%\renewcommand{\clearpage}{}
+			\input{contenido_introduccion}
+			\input{contenido_planteamiento_del_problema}
+			\input{contenido_objetivos}
+			\input{contenido_justificacion}
+			\input{contenido_cap1}		
+			\input{contenido_cap2}
+			\input{contenido_cap3}
+			\input{contenido_cap4}
+			\input{contenido_cap5}
+										
 		\endgroup
 
 	
@@ -183,6 +194,6 @@
 		\clearpage
 		\renewcommand{\bibname}{Bibliografía}
 		\bibliographystyle{apacite}
-		\bibliography{bibliografia/bibFile}
+		\bibliography{bibFile}
 	
 \end{document}
