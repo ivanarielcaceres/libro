@@ -43,7 +43,9 @@
 	\titleformat{\chapter}[display]
 	{\normalfont\bfseries\centering}{}{0pt}{\Large}
 	
-	
+	%formula caption
+	\DeclareCaptionType{mycapequ}[][List of equations]
+	\captionsetup[mycapequ]{labelformat=empty}
 	
 	%\titleformat{\section}
 	%{\normalfont\Large\bfseries}
@@ -115,13 +117,16 @@
 		
 		%elimina la justificacion de texto vertical
 		\raggedbottom
-		\pagestyle{preliminary}\pagenumbering{roman}
-		\fancypagestyle{plain}{\pagestyle{preliminary}}% Correct plain page style
 		
+		\pagenumbering{gobble}
 		%Cubiertas o tapas del libro
 		\include{cubierta_cubierta-1}
-		%\clearpage\null
+		%\clearpage\null		
 		\include{cubierta_cubierta-2}
+		
+		\pagestyle{preliminary}\pagenumbering{roman}
+		\fancypagestyle{plain}{\pagestyle{preliminary}}% Correct plain page style
+		\setcounter{page}{2}
 		%\clearpage\null
 		\include{cubierta_cubierta-3}
 		%\clearpage\null

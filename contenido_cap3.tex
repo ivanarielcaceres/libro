@@ -15,12 +15,15 @@ Se cuenta con datos de consumo de energía eléctrica, facturaciones, grupos de co
 
 En esta sección se presentan 4 productos construidos en esta Tesis, los cuales son Paneles de Control, en donde se relacionan conjuntos de datos de la ANDE y de la DGEEC. Una de las técnicas utilizadas para medir el crecimiento es la tasa de crecimiento, la cual se obtiene de la siguiente forma:\\
 \noindent
-Es calculado el porcentaje de crecimiento ocurrido por cada año (Ej: Si al cerrar el año 2014, la cantidad de clientes fue de 1.000.000 y en el año 2015 aumentó 100.000, esto quiere decir que en el año 2015, la tasa de crecimiento de los clientes fue del 10\%, es decir, hubo un crecimiento positivo y la cantidad de clientes ha aumentado). Suponiendo que en el año 2016 la ANDE cierra con un total de 1.000.000 de clientes, su crecimiento ser a 10\% menor al año anterior. La fórmula empleada (ver Fórmula abajo), donde n es el año actual y n-1 el año anterior, PIB indica la cantidad de clientes que posee la ANDE .\\
+Es calculado el porcentaje de crecimiento ocurrido por cada año (Ej: Si al cerrar el año 2014, la cantidad de clientes fue de 1.000.000 y en el año 2015 aumentó 100.000, esto quiere decir que en el año 2015, la tasa de crecimiento de los clientes fue del 10\%, es decir, hubo un crecimiento positivo y la cantidad de clientes ha aumentado). Suponiendo que en el año 2016 la ANDE cierra con un total de 1.000.000 de clientes, su crecimiento ser a 10\% menor al año anterior. La fórmula empleada (ver fórmula Tasa de variación abajo), donde n es el año actual y n-1 el año anterior, PIB indica la cantidad de clientes que posee la ANDE .\\
 
+\begin{mycapequ}[!ht]
+	\begin{equation}
+		t_n = \cfrac{PIB_n - PIB_{n-1}}{PIB_{n-1}} \times 100 \nonumber
+	\end{equation}
+	\caption{Fórmula: Tasa de variación}
+\end{mycapequ}
 
-\begin{equation}
-  t_n = \cfrac{PIB_n - PIB_{n-1}}{PIB_{n-1}} \times 100 \nonumber
-\end{equation}
 
 \input{contenido_dashboard1}
 \input{contenido_dashboard2}
