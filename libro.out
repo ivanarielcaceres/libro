@@ -1,0 +1,38 @@
+\BOOKMARK [0][-]{section*.1}{Lista de Siglas y Acrónimos}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Introducción}{}% 2
+\BOOKMARK [0][-]{chapter.2}{Planteamiento del problema}{}% 3
+\BOOKMARK [0][-]{chapter.3}{Objetivos}{}% 4
+\BOOKMARK [1][-]{section.3.1}{Objetivo General}{chapter.3}% 5
+\BOOKMARK [1][-]{section.3.2}{Objetivos Específicos}{chapter.3}% 6
+\BOOKMARK [1][-]{section.3.3}{Justificación}{chapter.3}% 7
+\BOOKMARK [0][-]{chapter.4}{Marco Teórico}{}% 8
+\BOOKMARK [1][-]{section.4.1}{Business Intelligence}{chapter.4}% 9
+\BOOKMARK [1][-]{section.4.2}{Componentes de BI}{chapter.4}% 10
+\BOOKMARK [2][-]{subsection.4.2.1}{OLAP}{section.4.2}% 11
+\BOOKMARK [2][-]{subsection.4.2.2}{Análisis Avanzado}{section.4.2}% 12
+\BOOKMARK [2][-]{subsection.4.2.3}{BI en tiempo real}{section.4.2}% 13
+\BOOKMARK [2][-]{subsection.4.2.4}{Datawarehouse y Datamarts}{section.4.2}% 14
+\BOOKMARK [1][-]{section.4.3}{Beneficios de BI}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.4}{Tecnología de BI}{chapter.4}% 16
+\BOOKMARK [1][-]{section.4.5}{Breve discución}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.6}{Data Discovery Analysis}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.7}{Framework de Análisis de Negocio de Gartner}{chapter.4}% 19
+\BOOKMARK [2][-]{subsection.4.7.1}{Portal de información}{section.4.7}% 20
+\BOOKMARK [2][-]{subsection.4.7.2}{Workbench analítico}{section.4.7}% 21
+\BOOKMARK [2][-]{subsection.4.7.3}{Laboratorio de datos científicos}{section.4.7}% 22
+\BOOKMARK [0][-]{chapter.5}{Selección de la herramienta para Data Discovery}{}% 23
+\BOOKMARK [1][-]{section.5.1}{Cuadrante Mágico de Gartner}{chapter.5}% 24
+\BOOKMARK [0][-]{chapter.6}{Resultado}{}% 25
+\BOOKMARK [1][-]{section.6.1}{Aplicación de Data Discovery a datos de instituciones del Estado}{chapter.6}% 26
+\BOOKMARK [1][-]{section.6.2}{Datos de la ANDE y de la DGEEC}{chapter.6}% 27
+\BOOKMARK [1][-]{section.6.3}{Dashboard de control / monitoramiento}{chapter.6}% 28
+\BOOKMARK [2][-]{subsection.6.3.1}{Dashboard - Clientes Facturados vs Crecimiento Poblacional}{section.6.3}% 29
+\BOOKMARK [2][-]{subsection.6.3.2}{Panel estadístico de consumo de electricidad por sector}{section.6.3}% 30
+\BOOKMARK [2][-]{subsection.6.3.3}{Panel comparativo de Tasa de crecimiento y el Consumo de energía}{section.6.3}% 31
+\BOOKMARK [2][-]{subsection.6.3.4}{Panel de Tasa de crecimiento poblacional y Consumo de energía anual}{section.6.3}% 32
+\BOOKMARK [0][-]{chapter.7}{Marco Metodológico}{}% 33
+\BOOKMARK [1][-]{section.7.1}{Alcance}{chapter.7}% 34
+\BOOKMARK [1][-]{section.7.2}{Enfoque}{chapter.7}% 35
+\BOOKMARK [1][-]{section.7.3}{Técnica e Instrumentos de recolección de datos}{chapter.7}% 36
+\BOOKMARK [0][-]{chapter.8}{Conclusiones y Trabajos futuros}{}% 37
+\BOOKMARK [1][-]{Item.10}{Referencias}{chapter.8}% 38
