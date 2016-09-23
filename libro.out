@@ -4,24 +4,24 @@
 \BOOKMARK [0][-]{chapter.3}{Objetivos}{}% 4
 \BOOKMARK [1][-]{section.3.1}{Objetivo General}{chapter.3}% 5
 \BOOKMARK [1][-]{section.3.2}{Objetivos Específicos}{chapter.3}% 6
-\BOOKMARK [1][-]{section.3.3}{Justificación}{chapter.3}% 7
-\BOOKMARK [0][-]{chapter.4}{Marco Teórico}{}% 8
-\BOOKMARK [1][-]{section.4.1}{Business Intelligence}{chapter.4}% 9
-\BOOKMARK [1][-]{section.4.2}{Componentes de BI}{chapter.4}% 10
-\BOOKMARK [2][-]{subsection.4.2.1}{OLAP}{section.4.2}% 11
-\BOOKMARK [2][-]{subsection.4.2.2}{Análisis Avanzado}{section.4.2}% 12
-\BOOKMARK [2][-]{subsection.4.2.3}{BI en tiempo real}{section.4.2}% 13
-\BOOKMARK [2][-]{subsection.4.2.4}{Datawarehouse y Datamarts}{section.4.2}% 14
-\BOOKMARK [1][-]{section.4.3}{Beneficios de BI}{chapter.4}% 15
-\BOOKMARK [1][-]{section.4.4}{Tecnología de BI}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.5}{Breve discución}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.6}{Data Discovery Analysis}{chapter.4}% 18
-\BOOKMARK [1][-]{section.4.7}{Framework de Análisis de Negocio de Gartner}{chapter.4}% 19
-\BOOKMARK [2][-]{subsection.4.7.1}{Portal de información}{section.4.7}% 20
-\BOOKMARK [2][-]{subsection.4.7.2}{Workbench analítico}{section.4.7}% 21
-\BOOKMARK [2][-]{subsection.4.7.3}{Laboratorio de datos científicos}{section.4.7}% 22
-\BOOKMARK [0][-]{chapter.5}{Selección de la herramienta para Data Discovery}{}% 23
-\BOOKMARK [1][-]{section.5.1}{Cuadrante Mágico de Gartner}{chapter.5}% 24
+\BOOKMARK [0][-]{chapter.4}{Justificación}{}% 7
+\BOOKMARK [0][-]{chapter.5}{Marco Teórico}{}% 8
+\BOOKMARK [1][-]{section.5.1}{Business Intelligence}{chapter.5}% 9
+\BOOKMARK [1][-]{section.5.2}{Componentes de BI}{chapter.5}% 10
+\BOOKMARK [2][-]{subsection.5.2.1}{OLAP}{section.5.2}% 11
+\BOOKMARK [2][-]{subsection.5.2.2}{Análisis Avanzado}{section.5.2}% 12
+\BOOKMARK [2][-]{subsection.5.2.3}{BI en tiempo real}{section.5.2}% 13
+\BOOKMARK [2][-]{subsection.5.2.4}{Datawarehouse y Datamarts}{section.5.2}% 14
+\BOOKMARK [1][-]{section.5.3}{Beneficios de BI}{chapter.5}% 15
+\BOOKMARK [1][-]{section.5.4}{Tecnología de BI}{chapter.5}% 16
+\BOOKMARK [1][-]{section.5.5}{Breve discución}{chapter.5}% 17
+\BOOKMARK [1][-]{section.5.6}{Data Discovery Analysis}{chapter.5}% 18
+\BOOKMARK [1][-]{section.5.7}{Framework de Análisis de Negocio de Gartner}{chapter.5}% 19
+\BOOKMARK [2][-]{subsection.5.7.1}{Portal de información}{section.5.7}% 20
+\BOOKMARK [2][-]{subsection.5.7.2}{Workbench analítico}{section.5.7}% 21
+\BOOKMARK [2][-]{subsection.5.7.3}{Laboratorio de datos científicos}{section.5.7}% 22
+\BOOKMARK [1][-]{section.5.8}{Selección de la herramienta para Data Discovery}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.9}{Cuadrante Mágico de Gartner}{chapter.5}% 24
 \BOOKMARK [0][-]{chapter.6}{Resultado}{}% 25
 \BOOKMARK [1][-]{section.6.1}{Aplicación de Data Discovery a datos de instituciones del Estado}{chapter.6}% 26
 \BOOKMARK [1][-]{section.6.2}{Datos de la ANDE y de la DGEEC}{chapter.6}% 27
