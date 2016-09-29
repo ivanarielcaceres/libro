@@ -19,7 +19,7 @@
 	\usepackage{scrextend}
 	
 	%make links automatically
-	\usepackage{hyperref}
+	%\usepackage{hyperref}
 	
 	\usepackage{ae}
 	\usepackage[T1]{fontenc}
@@ -128,7 +128,6 @@
 	
 	% Glosario
 	%\usepackage[doublespacing]{setspace}
-	
 	\setlength{\glsdescwidth}{0.9\linewidth}
 	\newglossarystyle{mylong}{
 		\glossarystyle{long}
@@ -137,6 +136,11 @@
 		\renewcommand{\glsgroupskip}{}
 	}
 	\makeglossaries% Inicia
+	%\renewcommand{\glstextformat}[1]{\textnormal{#1}}
+	%\renewcommand*{\glsdisplayfirst}[4]{\textnormal{#1#4}}
+	%\renewcommand{\glstextformat}[1]{\textit{\textnormal{#1}}}
+	%\renewcommand*{\glsdisplayfirst}[4]{\textbf{#1#4}}
+	%\renewcommand{\glstextformat}[1]{\textbf{#1}}
 
 	%headers spacing
 	%\titlespacing{\section}{0pt}{*0}{*0}
@@ -151,8 +155,8 @@
 	\renewcommand{\baselinestretch}{2}	
 	
 	%list of abbreviations
-	\usepackage[intoc]{nomencl}
-	\makenomenclature
+	%\usepackage[intoc]{nomencl}
+	%\makenomenclature
 	
 	\makeindex % <=== !!!!!	
 		
@@ -199,6 +203,7 @@
 
 		%GLOSARIO		
 		\pagebreak
+		\input{cubierta_glosario}
 		\printglossary[style=mylong,title=Lista de Siglas y Acrónimos]
 		
 		\include{cubierta_dedicatoria}
@@ -206,7 +211,6 @@
 		
 		\input{cubierta_resumen}
 		\input{cubierta_abstract}
-		\input{cubierta_glosario}
 		
 		\title{Data Discovery Paraguay}
 		\author{Ariel Hernán Landaida Duarte, Iván Ariel Caceres Cañete}

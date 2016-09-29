@@ -1,0 +1,22 @@
+\documentclass{article}
+
+\usepackage[colorlinks]{hyperref}
+\usepackage[acronym]{glossaries}
+
+\newignoredglossary{common}
+
+\makeglossaries
+
+\newglossaryentry{sample}{name={sample},description={an example}}
+
+\newacronym{abc}{ABC}{a sample acronym}
+\newacronym[type=common]{xyz}{XYZ}{another sample acronym}
+\input{cubierta_glosario}
+\begin{document}
+
+First use: \gls{abc}, \gls{sig:CPU}, \gls{xyz}, \gls{sample}.
+Next use: \gls{abc}, \gls{xyz} \gls{sig:CPU}.
+
+\printglossaries
+
+\end{document}
