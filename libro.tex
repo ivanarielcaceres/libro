@@ -34,7 +34,8 @@
 	\usepackage{float}
 	%\restylefloat{table}
 	
-	\usepackage[center]{titlesec}
+	%\usepackage[center]{titlesec}
+	
 	\usepackage[spanish]{babel}
 	\usepackage{apacite}
 	\usepackage{url}
@@ -48,8 +49,35 @@
 	
 	\usepackage{ragged2e}
 	
-	\titleformat{\chapter}[display]
-	{\normalfont\bfseries\centering}{}{0pt}{\Large}
+	%\titleformat{\chapter}[display]
+	%{\normalfont\bfseries\centering}{}{0pt}{\Large}
+\makeatletter
+\def\@makechapterhead#1{%
+	\vspace*{50\p@}%
+	{\parindent \z@ \raggedright \normalfont
+		\ifnum \c@secnumdepth >\m@ne
+		\centering\huge\bfseries \@chapapp\space \thechapter
+		\par\nobreak
+		\vskip 20\p@
+		\fi
+		\interlinepenalty\@M
+		\Huge \bfseries #1\par\nobreak
+		\vskip 40\p@
+	}}
+	\def\@makeschapterhead#1{%
+		\vspace*{50\p@}%
+		{\parindent \z@ \raggedright
+			\normalfont
+			\interlinepenalty\@M
+			\centering\Huge \bfseries  #1\par\nobreak
+			\vskip 40\p@
+		}}
+		\renewcommand\section{\@startsection {section}{1}{\z@}%
+			{-3.5ex \@plus -1ex \@minus -.2ex}%
+			{2.3ex \@plus.2ex}%
+			{\centering\normalfont\Large\bfseries}}
+		\makeatother
+	
 	
 	%formula caption
 	\DeclareCaptionType{mycapequ}[][List of equations]
@@ -121,6 +149,13 @@
 
 	%interlineado
 	\renewcommand{\baselinestretch}{2}	
+	
+	%list of abbreviations
+	\usepackage[intoc]{nomencl}
+	\makenomenclature
+	
+	\makeindex % <=== !!!!!	
+		
 \begin{document}
 		
 		%elimina la justificacion de texto vertical
@@ -186,9 +221,12 @@
 		\pagestyle{mainmatter}\pagenumbering{arabic}
 		\fancypagestyle{plain}{\pagestyle{mainmatter}}% Correct plain page style
 	  
-		%\clearpage\null
-		%Oculta la palabra Chapter y muestra solo el nombre que define para cada capitulo
-		\renewcommand{\chaptername}{CAPITULO}
+		
+		%Oculta la palabra Chapter
+		\renewcommand{\chaptername}{}
+		%Oculta la numeración de los chapters
+		\renewcommand{\thechapter}{}
+		
 
 		%Insertar capitulos		
 		\begingroup
@@ -203,8 +241,8 @@
 			\input{contenido_justificacion}
 			\input{contenido_marco_teorico}		
 			\input{contenido_seleccion_herramienta}
-			\input{contenido_resultados}
 			\input{contenido_marco_metodologico}
+			\input{contenido_resultados}
 			\input{contenido_conclusion}
 			\input{contenido_trabajos_futuros}			
 										
@@ -216,5 +254,6 @@
 		\renewcommand{\bibname}{Bibliografía}
 		\bibliographystyle{apacite}
 		\bibliography{bibFile}
+		
 	
 \end{document}
