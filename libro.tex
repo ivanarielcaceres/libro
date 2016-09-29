@@ -51,33 +51,53 @@
 	
 	%\titleformat{\chapter}[display]
 	%{\normalfont\bfseries\centering}{}{0pt}{\Large}
+
 \makeatletter
 \def\@makechapterhead#1{%
 	\vspace*{50\p@}%
 	{\parindent \z@ \raggedright \normalfont
 		\ifnum \c@secnumdepth >\m@ne
-		\centering\huge\bfseries \@chapapp\space \thechapter
-		\par\nobreak
-		\vskip 20\p@
+		\if@mainmatter
+		%\huge\bfseries \@chapapp\space \thechapter
+		\Huge\bfseries \centering \thechapter.\space%
+		%\par\nobreak
+		%\vskip 20\p@
+		\fi
 		\fi
 		\interlinepenalty\@M
 		\Huge \bfseries #1\par\nobreak
 		\vskip 40\p@
 	}}
-	\def\@makeschapterhead#1{%
-		\vspace*{50\p@}%
-		{\parindent \z@ \raggedright
-			\normalfont
-			\interlinepenalty\@M
-			\centering\Huge \bfseries  #1\par\nobreak
-			\vskip 40\p@
-		}}
-		\renewcommand\section{\@startsection {section}{1}{\z@}%
-			{-3.5ex \@plus -1ex \@minus -.2ex}%
-			{2.3ex \@plus.2ex}%
-			{\centering\normalfont\Large\bfseries}}
-		\makeatother
+\makeatother
 	
+%\makeatletter
+%\def\@makechapterhead#1{%
+%\vspace*{50\p@}%
+%{\parindent \z@ \raggedright \normalfont
+%	\ifnum \c@secnumdepth >\m@ne
+%	\centering\huge\bfseries \@chapapp\space \thechapter
+%	\par\nobreak
+%	\vskip 20\p@
+%	\fi
+%	\interlinepenalty\@M
+%	\Huge \bfseries #1\par\nobreak
+%	\vskip 40\p@
+%}}
+%\def\@makeschapterhead#1{%
+%\vspace*{50\p@}%
+%{\parindent \z@ \raggedright
+%	\normalfont
+%	\interlinepenalty\@M
+%	\centering\Huge \bfseries  #1\par\nobreak
+%	\vskip 40\p@
+%}}
+%\renewcommand\section{\@startsection {section}{1}{\z@}%
+%	{-3.5ex \@plus -1ex \@minus -.2ex}%
+%	{2.3ex \@plus.2ex}%
+%	{\centering\normalfont\Large\bfseries}}
+%\makeatother
+
+
 	
 	%formula caption
 	\DeclareCaptionType{mycapequ}[][List of equations]
@@ -160,6 +180,12 @@
 	
 	\makeindex % <=== !!!!!	
 		
+	\usepackage{sectsty}
+	%Center chapter
+	\chapterfont{\centering}
+	%Center section
+	\sectionfont{\centering}
+	%\subsectionfont{\centering}
 \begin{document}
 		
 		%elimina la justificacion de texto vertical
@@ -227,9 +253,10 @@
 	  
 		
 		%Oculta la palabra Chapter
-		\renewcommand{\chaptername}{}
+		%\renewcommand{\chaptername}{}
 		%Oculta la numeración de los chapters
-		\renewcommand{\thechapter}{}
+		%\renewcommand{\thechapter}{}
+		
 		
 
 		%Insertar capitulos		
