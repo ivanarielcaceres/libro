@@ -11,6 +11,9 @@
 	%identation on first paragraph
 	%\usepackage{indentfirst}
 	\setlength\parindent{1.25cm}
+	%Align to left all text
+	%\parfillskip=2em plus 0.1\textwidth
+	%\unskip\parfillskip 0pt \par
 	
 	%identation in specific text block with addmargin command
 	\usepackage{scrextend}
@@ -41,7 +44,9 @@
 	%add source to figures
 	\usepackage{caption}
 	%Para usar interlineado especifico en algunas partes
-	\usepackage{setspace}	
+	\usepackage{setspace}
+	
+	\usepackage{ragged2e}
 	
 	\titleformat{\chapter}[display]
 	{\normalfont\bfseries\centering}{}{0pt}{\Large}
@@ -138,13 +143,13 @@
 				
 		%Lista de contenido
 		\pagebreak				
-		\renewcommand{\contentsname}{ÍNDICE}
+		\renewcommand{\contentsname}{\hfill ÍNDICE \hfill}
 		\tableofcontents
 		
 		%Lista de Figuras
 		\pagebreak		
 		\newlength{\mylen}		
-		\renewcommand{\listfigurename}{ÍNDICE DE FIGURAS}
+		\renewcommand{\listfigurename}{\hfillÍNDICE DE FIGURAS\hfill}
 		\renewcommand{\figurename}{Figura}
 		\renewcommand{\cftfigpresnum}{Figura\enspace}
 		\renewcommand{\cftfigaftersnum}{:}
@@ -154,7 +159,7 @@
 		
 		%Lista de Tablas
 		\pagebreak		
-		\renewcommand{\listtablename}{LISTA DE TABLAS}
+		\renewcommand{\listtablename}{\hfill LISTA DE TABLAS\hfill}
 		\listoftables
 
 		%GLOSARIO		
@@ -190,8 +195,11 @@
 			\renewcommand{\cleardoublepage}{}
 			\renewcommand{\clearpage}{}
 			\input{contenido_introduccion}
+			\pagebreak
 			\input{contenido_planteamiento_del_problema}
+			\pagebreak
 			\input{contenido_objetivos}
+			\pagebreak
 			\input{contenido_justificacion}
 			\input{contenido_marco_teorico}		
 			\input{contenido_seleccion_herramienta}
