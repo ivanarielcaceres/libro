@@ -124,11 +124,11 @@ Las personas que trabajan en BI desarrollan productos que facilitan el trabajo, 
 \item Gestión de la línea de producción, Gestión de demandas.
 \item Gestión de la cadena de Suministro/Gestión de la cadena de demanda.
 \item Análisis de tendencias.
-\item Reportes y consultas de usuarios/usuarios-finales.
+\item Reportes y consultas de usuarios/usuarios-finales.\\
 \end{itemize}
 
 
-\noindent
+
 BI frecuentemente usa indicadores de rendimientos (KPIs, key performance indicators) para evaluar el estado actual de los negocios y para establecer un plan de acción. Más y más organizaciones han comenzado a disponibilizar más datos con mayor velocidad. En el pasado, los datos sólo estaban disponibles después de uno o dos meses, lo que no ayudaba a los directivos de empresas para ajustar las actividades con la velocidad necesaria para alcanzar sus objetivos. Recientemente, los bancos han intentado disponibilizar los datos en el intervalo más corto y reduciendo los atrasos \cite{ranjan2009business}.
 
 Por ejemplo, para negocios de alto riesgo operacional (por ejemplo, tarjetas de créditos), un banco multinacional disponibiliza los datos relacionados con KPI semanalmente, y en ocasiones ofrece un análisis diario de los números. Esto significa que los datos normalmente están disponibles  a cada 24 horas, requiriendo la automatización y el uso de sistemas de TI.
@@ -190,7 +190,7 @@ Explorar un conjunto de datos sin una fuerte dependencia en hipótesis o modelos;
 \label{tab:tecnicasActualesBI}
 \end{table}
 
-\noindent
+
 En el siguiente capítulo se presenta una introducción a los métodos y técnicas de análisis exploratorio, y en especial la técnica actualmente llamada Data Discovery, la cual fue aplicada en este trabajo.
 
 \section{Data Discovery  Analysis}
@@ -247,18 +247,18 @@ El entorno de BI y el análisis resultante también exigirá cambios en los proceso
 A continuación el framework de análisis de negocios.
 La figura ~\ref{fig:FrameworkAnaliticoNegociosGartner} presenta el framework de análisis de negocios de Gartner.
 
-\include{figura2}
+\input{figura2}
 
-\noindent
+
 El framework de análisis de Gartner identifica las personas, los procesos y componentes de la plataforma que apoyan la transformación de la información en un mejor rendimiento de la organización. El uso de esta herramienta está hecha por la lectura desde arriba hacia abajo, comenzando con los resultados del negocio y luego descifrando las composiciones analíticas de apoyo y la información necesaria para alcanzarlos. De acuerdo a las necesidades de los usuarios, la plataforma debe ser re-diseñada con un amplio conjunto de capacidades técnicas (llenando los vacíos), nuevas responsabilidades y organización. Centrándose en las herramientas o normalización de proveedor  por sí sola no es la respuesta
 
 El framework es también muy útil para definir los estados actuales y futuros de la arquitectura. La diferencia entre ellos es el mapa de rutas e incluye cambios en personas y procesos.  La organización muy probablemente también necesitará re-organizar y capacitar a los proveedores y usuarios de BI y análisis.
 Los usuarios de negocio deben ganar acceso a las herramientas analíticas  adecuadas, de acuerdo a sus metas y habilidades, y un rango comprensivo de fuente de datos con tipos de datos variados, granularidad adecuada y accesos apropiados.
 Teniendo en cuenta el espectro de capacidades analíticas con énfasis en las plataformas, en particular, el componente de capacidad analítica, podemos notar cuatro estilos analíticos que se detallaran a continuación  (Figura~\ref{fig:espectroAnalitico}).
 
-\include{figura9}
+\input{figura9}
 
-\noindent
+
 Las capacidades analíticas implementadas en organizaciones son a menudo limitadas el análisis descriptivo, a través de reportes básicos y dashboards. Con esto, la pregunta, ``Qué paso\mbox{?}`` puede ser respondida. Después de conocer ``Que,`` , lo más probable es que los usuarios también pregunten, ``Por qué pasó\mbox{?}``.  Abordar adecuadamente esto requiere mucha más agilidad y más capacidades avanzadas de exploración de la información. Despliegues de BI tradicionales tienden a tener huecos en esta área, pero TI por lo general pasa por alto el impacto de esta problemática y continúa impulsando el estándar del proveedor y sus herramientas no aptas-para-propósito. Como consecuencia, los usuarios recurrirán a Excel, consultas ad hoc, extracciones de datos y a los equipos de shadow TI para lograr sus metas de análisis
 
 Los líderes de BI deben extender el BI y la plataforma analítica hasta el análisis de diagnóstico para complementar el análisis descriptivo. Aquí es donde OLAP y los modelos de datos en memoria son utilizadas para proporcionar una navegación fácil y rápida de datos sin una consulta predefinida. Aprovechando mejoras en el nivel de acceso a datos, también vemos la necesidad de mejorar las capas semánticas abstrayendo la complejidad del modelo físico subyacente. Esto puede hacer que sea mucho más fácil para el descubrimiento de autoservicio sin el cuello de botella de TI que se encuentra en un típico equipo de BI
@@ -276,12 +276,12 @@ Re-diseñar el BI y la Plataforma Analítica. Los líderes de BI deben seguir las h
 \item Laboratorio de datos científicos.
 \end{itemize}
 
-\noindent
+
 En la figura ~\ref{fig:tipicoUsoEstilosAnaliticos} se presenta la representación de BI en niveles y la plataforma analítica, la cual puede ser utilizada como una guía genérica que puede ser ajustado de acuerdo a las características específicas de la organización.
 
-\include{figura3}
+\input{figura3}
 
-\noindent
+
 Para hacer realidad la visión de los tres niveles y ser capaz de maximizar sus fortalezas, los líderes de BI necesitan implementar nuevas capacidades técnicas para proporcionar nuevos estilos de análisis, mejorar el uso de las herramientas existentes a través de una mejor integración global, y proporcionar metadatos comunes y gobernanza. Procesos, roles de personas y responsabilidades, son de suma importancia para el éxito
 
 Ellos deben ser tratados  en conjunto con la plataforma técnica como se describe en el framework de análisis de negocios de  Gartner 
@@ -291,18 +291,18 @@ Vamos a ampliar cada nivel para entender cómo integrar y aprovecharlos en conjun
 \subsection{Portal de información}
 
 Seguir de cerca las características de sistemas de registros desde el Pace Layer Model.
-El portal de información es el área de trabajo donde los usuarios de negocio pueden encontrar rápida y fácilmente las métricas clave de confianza con la cual la organización mide su rendimiento. Por lo general hecho de capacidades de informes y dashboard que proporciona contenido para los consumidores de información. Sus productos son el resultado de un proceso de desarrollo formal que abarca que un usuario de negocios establezca requisitos y un especialista técnico(típicamente de TI, pero cada vez más de negocio) los implemente
+El portal de información es el área de trabajo donde los usuarios de negocio pueden encontrar rápida y fácilmente las métricas clave de confianza con la cual la organización mide su rendimiento. Por lo general hecho de capacidades de informes y dashboard que proporciona contenido para los consumidores de información. Sus productos son el resultado de un proceso de desarrollo formal que abarca que un usuario de negocios establezca requisitos y un especialista técnico(típicamente de TI, pero cada vez más de negocio) los implemente.\\
 
-Capacidades típicas de la plataforma:
+\noindent Capacidades típicas de la plataforma:
 \begin{itemize}[noitemsep, nolistsep]
 	\item Informes.
 	\item Dashboards.
 	\item Integración Microsoft Office.
 	\item BI móvil.
-	\item Análisis integrada
+	\item Análisis integrada\\
 \end{itemize}
 
-Ejemplo de herramientas y proveedores:
+\noindent Ejemplo de herramientas y proveedores:
 \begin{itemize}[noitemsep, nolistsep, nosep]
 	\item SAP BusinessObjects.
 	\item IBM Cognos.
@@ -315,10 +315,10 @@ Ejemplo de herramientas y proveedores:
 \subsection{Workbench analítico}
 El workbench analítico es el área de trabajo usado para investigar tendencias en indicadores de confianza o detectar patrones en otros conjuntos de datos --- desde múltiples fuentes --. que pueden convertirse en oportunidades o riesgos. Es una capa ágil para explorar información y tener acceso a un amplia gama de fuentes de datos,  con limitado o ningún apoyo de expertos técnicos. Los conjuntos de herramientas deberían incluir una herramienta de data discovery  (descubrimiento de datos) y un número de otras capacidades para ayudar a los usuarios de negocios a extraer valor de la  información de forma autónoma
 
-En el espectro de análisis, el workbench es capaz de proporcionar análisis descriptivo, pero por lo general se centrará en el análisis de diagnóstico. En algunos casos --  es decir, a través del uso de herramientas de data discovery más centrado al análisis. -- Puede extender a un nivel básico de análisis predictivo y ganará el modelado de datos y capacidades analíticas más avanzadas en el futuro
+En el espectro de análisis, el workbench es capaz de proporcionar análisis descriptivo, pero por lo general se centrará en el análisis de diagnóstico. En algunos casos --  es decir, a través del uso de herramientas de data discovery más centrado al análisis. -- Puede extender a un nivel básico de análisis predictivo y ganará el modelado de datos y capacidades analíticas más avanzadas en el futuro.\cite{tapadinhas2014architect}\\
 
 
-Capacidades típicas de la plataforma:
+\noindent Capacidades típicas de la plataforma:
 \begin{itemize}[noitemsep, nolistsep]
 	\item Data discovery.
 	\item Informes/consultas Ad hoc.
@@ -330,7 +330,7 @@ Capacidades típicas de la plataforma:
 	\item Filtrado y manipulación de datos
 \end{itemize}
 
-Ejemplo de herramientas y proveedores:
+\noindent Ejemplo de herramientas y proveedores:
 \begin{itemize}[noitemsep, nolistsep]
 	\item Tableau Software.
 	\item Qlik.
@@ -348,10 +348,10 @@ Ejemplo de herramientas y proveedores:
 
 El laboratorio científico de datos es el área de trabajo donde análisis avanzados se llevan a cabo y es la incubadora ideal para iniciativas big data. Es un entorno flexible donde experimentos de prueba y error es actualmente alentado para generar ideas impactantes para la organización
 
-Un amplio conjunto de capacidades técnicas es esperado y a menudo proporcionado por herramientas especializadas con integración TI mínima, destinada a entregar agilidad y capacidad de responder las preguntas imprevisibles. Esto es porque TI tiende a pasar por alto esta área a favor de inversión en el portal de información. Los usuarios son cualificados y experimentados, a menudo más que los expertos técnicos en TI. Sus conjuntos de herramientas incluyen capacidades de data mining, predicciones y otras herramientas de estadísticas y análisis complejos
+Un amplio conjunto de capacidades técnicas es esperado y a menudo proporcionado por herramientas especializadas con integración TI mínima, destinada a entregar agilidad y capacidad de responder las preguntas imprevisibles. Esto es porque TI tiende a pasar por alto esta área a favor de inversión en el portal de información. Los usuarios son cualificados y experimentados, a menudo más que los expertos técnicos en TI. Sus conjuntos de herramientas incluyen capacidades de data mining, predicciones y otras herramientas de estadísticas y análisis complejos.\\
 
-\pagebreak
-Capacidades típicas de la plataforma:
+
+\noindent Capacidades típicas de la plataforma:
 \begin{itemize}[noitemsep, nolistsep, nosep]
 	\item Acceso avanzado de datos.
 	\item Soporte para fuentes de big data.
@@ -361,11 +361,11 @@ Capacidades típicas de la plataforma:
 	\item Optimización.
 	\item Simulación.
 	\item Otros análisis avanzado.
-	\item Aunque no capacidades BI, Hadoop y bases de datos NoSQL también deben ser referenciados aquí
+	\item Aunque no capacidades BI, Hadoop y bases de datos NoSQL también deben ser referenciados aquí\\
 \end{itemize}
 
-%\vspace{-50mm}
-Ejemplo de herramientas y proveedores:
+
+\noindent Ejemplo de herramientas y proveedores:
 %\vspace{-50mm}
 \begin{itemize}[noitemsep, nolistsep, nosep]
 	\item SAS Enterprise Miner.
@@ -379,7 +379,7 @@ Ejemplo de herramientas y proveedores:
 	\item Dell StatSoft.
 	\item Cloudera.
 	\item Hortonworks.
-	\item MapR y otras distribuciones Hadoop
+	\item MapR y otras distribuciones Hadoop\\
 \end{itemize}
 
 %\vspace{-50mm}
