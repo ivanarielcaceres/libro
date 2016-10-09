@@ -38,6 +38,8 @@
 	
 	\usepackage[spanish]{babel}
 	\usepackage{apacite}
+	\bibliographystyle{apacite}
+	
 	\usepackage{url}
 	\usepackage{enumitem}
 	%to external document referencing
@@ -187,6 +189,9 @@
 	\sectionfont{\centering}
 	%\subsectionfont{\centering}
 \begin{document}
+		%bibliografia abreviatura		
+		\renewcommand{\BOthers}[1]{et al.\hbox{}}%
+		
 		
 		%elimina la justificacion de texto vertical
 		\raggedbottom
@@ -282,8 +287,7 @@
 	
 		
 		\clearpage
-		\renewcommand{\bibname}{Bibliografía}
-		\bibliographystyle{apacite}
+		\renewcommand{\bibname}{Bibliografía}		
 		\bibliography{bibFile}
 		
 	
