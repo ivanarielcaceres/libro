@@ -236,13 +236,16 @@
 		\pagebreak
 		\input{cubierta_glosario}
 		\printglossary[style=mylong,title=Lista de Siglas y Acrónimos]
-		
-		\include{cubierta_dedicatoria}
-		\include{cubierta_agradecimientoAutor1}	
-		
-		\input{cubierta_resumen}
-		\input{cubierta_abstract}
-		
+		\begingroup
+			\renewcommand{\cleardoublepage}{}
+			\renewcommand{\clearpage}{}
+			\include{cubierta_dedicatoria}
+			\include{cubierta_agradecimientoAutor1}	
+			\pagebreak
+			\include{cubierta_resumen}
+			\pagebreak
+			\include{cubierta_abstract}
+		\endgroup
 		\title{Data Discovery Paraguay}
 		\author{Ariel Hernán Landaida Duarte, Iván Ariel Caceres Cañete}
 		%oculta la fecha por defecto
